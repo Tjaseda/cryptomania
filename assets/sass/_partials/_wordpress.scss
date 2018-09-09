@@ -108,8 +108,15 @@ a img.aligncenter {
 	/* Above WP toolbar. */
 }
 
-.sticky {}
+.sticky {
+	display: block;
+}
 
-.gallery-caption {}
+.gallery-caption {
+	display: block;
+}
 
-.bypostauthor {}
+.bypostauthor {
+  line-height: normal;
+  text-decoration: none;
+}
