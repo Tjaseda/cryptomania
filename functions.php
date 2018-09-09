@@ -60,10 +60,10 @@ if ( ! function_exists( 'cryptomania_setup' ) ) :
 		) );
 
 		// Set up the WordPress core custom background feature.
-		// add_theme_support( 'custom-background', apply_filters( 'cryptomania_custom_background_args', array(
-		// 	'default-color' => 'ffffff',
-		// 	'default-image' => '',
-		// ) ) );
+		add_theme_support( 'custom-background', apply_filters( 'cryptomania_custom_background_args', array(
+			'default-color' => 'ffffff',
+			'default-image' => '',
+		) ) );
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -158,3 +158,12 @@ require get_template_directory() . '/inc/template-functions.php';
 // if ( defined( 'JETPACK__VERSION' ) ) {
 // 	require get_template_directory() . '/inc/jetpack.php';
 // }
+
+/**
+ * Apply theme's stylesheet to the visual editor.
+ */
+function cryptomania_add_editor_styles() {
+ add_editor_style( get_stylesheet_uri() );
+}
+
+add_action( 'admin_init', 'cryptomania_add_editor_styles' );
