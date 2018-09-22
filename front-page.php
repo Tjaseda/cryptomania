@@ -14,8 +14,8 @@ get_header( 'front' );
 		<div class="o-pg-sec o-pg-sec--white o-pg-sec--pd-md">
 			<!-- top coin background image-->
 			<div class="c-bg-coin c-bg-coin--top">
-				<img class="c-bg-coin__img c-bg-coin__img--top" src="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?>"
-																												srcset="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?> 300w,
+				<img class="lazyload c-bg-coin__img c-bg-coin__img--top" data-src="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?>"
+																												data-srcset="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?> 300w,
 																																<?php echo get_template_directory_uri() . '/assets/images/coin-medium.png'; ?> 600w,
 																																<?php echo get_template_directory_uri() . '/assets/images/coin-big.png'; ?> 810w,
 																																<?php echo get_template_directory_uri() . '/assets/images/coin-large.png'; ?> 1000w,
@@ -24,8 +24,8 @@ get_header( 'front' );
 			</div>
 			<!-- bottom coin background image-->
 			<div class="c-bg-coin c-bg-coin--bottom">
-				<img class="c-bg-coin__img c-bg-coin__img--bottom" src="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?>"
-																													srcset="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?> 300w,
+				<img class="lazyload c-bg-coin__img c-bg-coin__img--bottom" data-src="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?>"
+																													data-srcset="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?> 300w,
 																																	<?php echo get_template_directory_uri() . '/assets/images/coin-medium.png'; ?> 600w,
 																																	<?php echo get_template_directory_uri() . '/assets/images/coin-big.png'; ?> 810w,
 																																	<?php echo get_template_directory_uri() . '/assets/images/coin-large.png'; ?> 1000w,
@@ -88,8 +88,8 @@ get_header( 'front' );
 						<div class="l-cl l-cl-sm--10 l-cl-ds--5 l-pos--rel">
 							<!-- full city background that gets displayed from desktop width on-->
 							<div class="c-bg-cityfull l-pos--abs">
-								<img class="c-bg-cityfull__img" src="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?>"
-																								srcset="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?> 300w,
+								<img class="lazyload c-bg-cityfull__img" data-src="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?>"
+																								data-srcset="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?> 300w,
 																												<?php echo get_template_directory_uri() . '/assets/images/cityfull-small.png'; ?> 868w,
 																												<?php echo get_template_directory_uri() . '/assets/images/cityfull-medium.png'; ?> 1076w,
 																												<?php echo get_template_directory_uri() . '/assets/images/cityfull-big.png'; ?> 1120w,
@@ -99,8 +99,8 @@ get_header( 'front' );
 							</div>
 							<!-- image of how to play page section that is always displayed-->
 							<div class="c-bg-cityfull__img-top">
-								<img class="c-bg-cityfull__image" src="<?php echo get_template_directory_uri() . '/assets/images/circle-small.png'; ?>"
-																									srcset="<?php echo get_template_directory_uri() . '/assets/images/circle-small.png'; ?> 380w,
+								<img class="lazyload c-bg-cityfull__image" data-src="<?php echo get_template_directory_uri() . '/assets/images/circle-small.png'; ?>"
+																									data-srcset="<?php echo get_template_directory_uri() . '/assets/images/circle-small.png'; ?> 380w,
 																													<?php echo get_template_directory_uri() . '/assets/images/circle-medium.png'; ?> 480w,
 																													<?php echo get_template_directory_uri() . '/assets/images/circle-large.png'; ?> 600w,
 																													<?php echo get_template_directory_uri() . '/assets/images/circle-hi-dpi.png'; ?> 920w"
@@ -157,8 +157,8 @@ get_header( 'front' );
 					<div class="l-cl l-cl-sm--10 l-cl-ds--5">
 						<!-- about us section image -->
 						<div class="c-img-sec__img-wrap">
-							<img class="c-img-sec__img c-img-sec__img--char" src="<?php echo get_template_directory_uri() . '/assets/images/characters-small.png'; ?>"
-																																srcset="<?php echo get_template_directory_uri() . '/assets/images/characters-small.png'; ?> 340w,
+							<img class="lazyload c-img-sec__img c-img-sec__img--char" data-src="<?php echo get_template_directory_uri() . '/assets/images/characters-small.png'; ?>"
+																																data-srcset="<?php echo get_template_directory_uri() . '/assets/images/characters-small.png'; ?> 340w,
 																																				<?php echo get_template_directory_uri() . '/assets/images/characters-medium.png'; ?> 650w,
 																																				<?php echo get_template_directory_uri() . '/assets/images/characters-big.png'; ?> 800w,
 																																				<?php echo get_template_directory_uri() . '/assets/images/characters-large.png'; ?> 1000w,
@@ -220,8 +220,8 @@ get_header( 'front' );
 					<div class="l-cl l-cl-sm--10 l-cl-ds--5">
 						<!-- whats in the box page section image -->
 						<div class="c-img-sec__img-wrap c-img-sec__img-wrap--box">
-							<img class="c-img-sec__img c-img-sec__img--box" src="<?php echo get_template_directory_uri() . '/assets/images/box-small.jpg'; ?>"
-																															srcset="<?php echo get_template_directory_uri() . '/assets/images/box-small.jpg'; ?> 300w,
+							<img class="lazyload c-img-sec__img c-img-sec__img--box" data-src="<?php echo get_template_directory_uri() . '/assets/images/box-small.jpg'; ?>"
+																															data-srcset="<?php echo get_template_directory_uri() . '/assets/images/box-small.jpg'; ?> 300w,
 																																			<?php echo get_template_directory_uri() . '/assets/images/box-medium.jpg'; ?> 500w,
 																																			<?php echo get_template_directory_uri() . '/assets/images/box-big.jpg'; ?> 900w,
 																																			<?php echo get_template_directory_uri() . '/assets/images/box-large.jpg'; ?> 1300w,
@@ -333,7 +333,7 @@ get_header( 'front' );
 
 								<div id="slide" class="l-row l-row-sm--col-o l-row-md--row-o c-slider__slide">
 									<div class="l-cl l-cl-sm--10 l-cl-md--5">
-										<img class="c-slider__image" src="https://content-static.upwork.com/uploads/2014/10/01073427/profilephoto1.jpg" />
+										<img class="lazyload c-slider__image" data-src="https://content-static.upwork.com/uploads/2014/10/01073427/profilephoto1.jpg" />
 									</div>
 									<div class="l-cl l-cl-sm--10 l-cl-md--5">
 										<div class="c-slider__text">
@@ -345,7 +345,7 @@ get_header( 'front' );
 
 								<div id="slide" class="l-row l-row-sm--col-o l-row-md--row-o c-slider__slide">
 									<div class="l-cl l-cl-sm--10 l-cl-md--5">
-										<img class="c-slider__image" src="https://content-static.upwork.com/uploads/2014/10/01073427/profilephoto1.jpg" />
+										<img class="lazyload c-slider__image" data-src="https://content-static.upwork.com/uploads/2014/10/01073427/profilephoto1.jpg" />
 									</div>
 									<div class="l-cl l-cl-sm--10 l-cl-md--5">
 										<div class="c-slider__text">
@@ -357,7 +357,7 @@ get_header( 'front' );
 
 								<div id="slide" class="l-row l-row-sm--col-o l-row-md--row-o c-slider__slide">
 									<div class="l-cl l-cl-sm--10 l-cl-md--5">
-										<img class="c-slider__image" src="https://content-static.upwork.com/uploads/2014/10/01073427/profilephoto1.jpg" />
+										<img class="lazyload c-slider__image" data-src="https://content-static.upwork.com/uploads/2014/10/01073427/profilephoto1.jpg" />
 									</div>
 									<div class="l-cl l-cl-sm--10 l-cl-md--5">
 										<div class="c-slider__text">

@@ -133,6 +133,8 @@ function cryptomania_scripts() {
 
 	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/assets/js/dist/app.min.js', '', '', true);
 
+	wp_enqueue_script( 'vendor-js', get_template_directory_uri() . '/assets/js/dist/vendor.min.js', '', '', false);
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
