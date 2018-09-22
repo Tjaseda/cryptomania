@@ -25,34 +25,46 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cryptomania' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$cryptomania_description = get_bloginfo( 'description', 'display' );
-			if ( $cryptomania_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $cryptomania_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'cryptomania' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
+		<div class="c-nav--white c-nav--mg">
+			<div class="l-col l-col-2">
+				<a href="<?php echo home_url(); ?>"><img class="c-nav__logo" src="<?php echo get_template_directory_uri() . '/assets/images/logo-2.png'; ?>" alt="<?php bloginfo( 'name' ); ?>" /></a>
+			</div><!-- /logo -->
+
+			<nav id="site-navigation" class="c-nav__nav c-nav__nav--page">
+				<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				) );
+				?>
+			</nav><!-- #site-navigation -->
+
+			<div class="l-col l-col-2">
+			</div><!-- /empty space -->
+
+		</div><!-- /navigation -->
+
+		<div class="c-bg-city c-bg-city--sm">
+
+			<div class="c-bg-city__img-wrap hero-city__img-wrap--trans">
+
+				<img class="c-bg-city__img" src="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?>"
+																		srcset="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?> 850w,
+																						<?php echo get_template_directory_uri() . '/assets/images/city-desktop.png'; ?> 1366w,
+																						<?php echo get_template_directory_uri() . '/assets/images/city-desktop-hi-dpi.png'; ?> 2732w,
+																						<?php echo get_template_directory_uri() . '/assets/images/city-large-hi-dpi.png'; ?> 3840w"
+																		sizes="100vw" />
+
+				<div class="c-bg-city__overlay"></div>
+			</div><!-- /c-bg-city image wrap-->
+
+			<div class="c-hero__title-wrap">
+				<h1 class="o-h o-h__1 o-txt--white o-txt--center"><?php echo the_title(); ?></h1>
+			</div><!-- /hero__title-wrap -->
+
+		</div><!-- /c-bg-city -->
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

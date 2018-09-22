@@ -1,0 +1,185 @@
+.l-container {
+  width: 100%;
+
+  @include breakpoint(medium) {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  @include breakpoint(desktop) {
+    max-width: 1270px;
+  }
+}
+
+.l-wrap {
+  padding: $offset40 $offset10;
+  width: 100%;
+
+  @include breakpoint(desktop) {
+    padding: 0;
+  }
+
+  &--sm {
+    padding: 0 $offset10;
+  }
+}
+
+
+.l-row {
+  display: flex;
+
+  &-sm {
+    &--col-o {
+      flex-direction: column;
+    }
+
+    &--col-r {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &-md {
+    &--col-o {
+      @include breakpoint(mediumLarge) {
+        flex-direction: column;
+      }
+    }
+    &--col-r {
+      @include breakpoint(mediumLarge) {
+        flex-direction: column-reverse;
+      }
+    }
+    &--row-o {
+      @include breakpoint(mediumLarge) {
+        flex-direction: row;
+      }
+    }
+    &--row-r {
+      @include breakpoint(mediumLarge) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &-ds {
+    &--col-o {
+      @include breakpoint(desktop) {
+        flex-direction: column;
+      }
+    }
+    &--col-r {
+      @include breakpoint(desktop) {
+        flex-direction: column-reverse;
+      }
+    }
+    &--row-o {
+      @include breakpoint(desktop) {
+        flex-direction: row;
+      }
+    }
+    &--row-r {
+      @include breakpoint(desktop) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &-lg {
+    &--col-o {
+      @include breakpoint(desktopLarge) {
+        flex-direction: column;
+      }
+    }
+    &--col-r {
+      @include breakpoint(desktopLarge) {
+        flex-direction: column-reverse;
+      }
+    }
+    &--row-o {
+      @include breakpoint(desktopLarge) {
+        flex-direction: row;
+      }
+    }
+    &--row-r {
+      @include breakpoint(desktopLarge) {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.l-cl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-sm {
+    &--10 {
+      width: 100%;
+    }
+  }
+
+  &-md {
+    &--3 {
+      @include breakpoint(mediumLarge) {
+        width: 30%;
+      }
+    }
+
+    &--5 {
+      @include breakpoint(mediumLarge) {
+        width: 50%;
+      }
+    }
+
+    &--7 {
+      @include breakpoint(mediumLarge) {
+        width: 70%;
+      }
+    }
+  }
+
+  &-ds {
+    &--5 {
+      @include breakpoint(desktop) {
+        width: 50%;
+      }
+    }
+  }
+
+  &-lg {
+    &--5 {
+      @include breakpoint(desktopLarge) {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.l-cl-10 {
+  width: 100%
+}
+
+.l-cl-5 {
+  width: 100%;
+
+  @include breakpoint(mediumLarge) {
+    width: 50%;
+  }
+}
+
+.l-col {
+  display: inline-block;
+}
+
+.l-col-2 {
+  width: 20%;
+}
+
+.l-col-6 {
+  width: 59%;
+}
+
+.l-col-5 {
+  width: 49%;
+}
