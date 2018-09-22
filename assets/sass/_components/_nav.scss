@@ -1,4 +1,4 @@
-li.current-menu-item a {
+li.current-menu-item a,  li.current-page-ancestor a, li.current_page_item a {
   color: $green;
 }
 

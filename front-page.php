@@ -15,22 +15,22 @@ get_header( 'front' );
 			<!-- top coin background image-->
 			<div class="c-bg-coin c-bg-coin--top">
 				<img class="lazyload c-bg-coin__img c-bg-coin__img--top" data-src="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?>"
-																												data-srcset="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?> 300w,
-																																<?php echo get_template_directory_uri() . '/assets/images/coin-medium.png'; ?> 600w,
-																																<?php echo get_template_directory_uri() . '/assets/images/coin-big.png'; ?> 810w,
-																																<?php echo get_template_directory_uri() . '/assets/images/coin-large.png'; ?> 1000w,
-																																<?php echo get_template_directory_uri() . '/assets/images/coin-hi-dpi.png'; ?> 1536w"
-																												sizes="(min-width: 1550px) 40vw, (min-width: 970px) 50vw, 20vw" />
+				data-srcset="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?> 300w,
+					<?php echo get_template_directory_uri() . '/assets/images/coin-medium.png'; ?> 600w,
+					<?php echo get_template_directory_uri() . '/assets/images/coin-big.png'; ?> 810w,
+					<?php echo get_template_directory_uri() . '/assets/images/coin-large.png'; ?> 1000w,
+					<?php echo get_template_directory_uri() . '/assets/images/coin-hi-dpi.png'; ?> 1536w"
+				sizes="(min-width: 1550px) 40vw, (min-width: 970px) 50vw, 20vw" />
 			</div>
 			<!-- bottom coin background image-->
 			<div class="c-bg-coin c-bg-coin--bottom">
 				<img class="lazyload c-bg-coin__img c-bg-coin__img--bottom" data-src="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?>"
-																													data-srcset="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?> 300w,
-																																	<?php echo get_template_directory_uri() . '/assets/images/coin-medium.png'; ?> 600w,
-																																	<?php echo get_template_directory_uri() . '/assets/images/coin-big.png'; ?> 810w,
-																																	<?php echo get_template_directory_uri() . '/assets/images/coin-large.png'; ?> 1000w,
-																																	<?php echo get_template_directory_uri() . '/assets/images/coin-hi-dpi.png'; ?> 1536w"
-																													sizes="(min-width: 1550px) 40vw, (min-width: 970px) 50vw, 20vw" />
+				data-srcset="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?> 300w,
+					<?php echo get_template_directory_uri() . '/assets/images/coin-medium.png'; ?> 600w,
+					<?php echo get_template_directory_uri() . '/assets/images/coin-big.png'; ?> 810w,
+					<?php echo get_template_directory_uri() . '/assets/images/coin-large.png'; ?> 1000w,
+					<?php echo get_template_directory_uri() . '/assets/images/coin-hi-dpi.png'; ?> 1536w"
+				sizes="(min-width: 1550px) 40vw, (min-width: 970px) 50vw, 20vw" />
 
 				<!-- <img class="c-bg-coin__img c-bg-coin__img--bottom" src="<?php echo get_template_directory_uri() . '/assets/images/coin-bg.png'; ?>" alt="bitcoin bg" /> -->
 			</div>
@@ -89,22 +89,22 @@ get_header( 'front' );
 							<!-- full city background that gets displayed from desktop width on-->
 							<div class="c-bg-cityfull l-pos--abs">
 								<img class="lazyload c-bg-cityfull__img" data-src="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?>"
-																								data-srcset="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?> 300w,
-																												<?php echo get_template_directory_uri() . '/assets/images/cityfull-small.png'; ?> 868w,
-																												<?php echo get_template_directory_uri() . '/assets/images/cityfull-medium.png'; ?> 1076w,
-																												<?php echo get_template_directory_uri() . '/assets/images/cityfull-big.png'; ?> 1120w,
-																												<?php echo get_template_directory_uri() . '/assets/images/cityfull-large.png'; ?> 1400w,
-																												<?php echo get_template_directory_uri() . '/assets/images/cityfull-hi-dpi.png'; ?> 2150w"
-																								sizes="(min-width: 970px) 56vw, 20vw" />
+								data-srcset="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?> 300w,
+									<?php echo get_template_directory_uri() . '/assets/images/cityfull-small.png'; ?> 868w,
+									<?php echo get_template_directory_uri() . '/assets/images/cityfull-medium.png'; ?> 1076w,
+									<?php echo get_template_directory_uri() . '/assets/images/cityfull-big.png'; ?> 1120w,
+									<?php echo get_template_directory_uri() . '/assets/images/cityfull-large.png'; ?> 1400w,
+									<?php echo get_template_directory_uri() . '/assets/images/cityfull-hi-dpi.png'; ?> 2150w"
+								sizes="(min-width: 970px) 56vw, 20vw" />
 							</div>
 							<!-- image of how to play page section that is always displayed-->
 							<div class="c-bg-cityfull__img-top">
 								<img class="lazyload c-bg-cityfull__image" data-src="<?php echo get_template_directory_uri() . '/assets/images/circle-small.png'; ?>"
-																									data-srcset="<?php echo get_template_directory_uri() . '/assets/images/circle-small.png'; ?> 380w,
-																													<?php echo get_template_directory_uri() . '/assets/images/circle-medium.png'; ?> 480w,
-																													<?php echo get_template_directory_uri() . '/assets/images/circle-large.png'; ?> 600w,
-																													<?php echo get_template_directory_uri() . '/assets/images/circle-hi-dpi.png'; ?> 920w"
-																									sizes="(min-width: 1550px) 50vw, (min-width: 740px) 60vw, (min-width: 500px) 55vw, 75vw" />
+								data-srcset="<?php echo get_template_directory_uri() . '/assets/images/circle-small.png'; ?> 380w,
+									<?php echo get_template_directory_uri() . '/assets/images/circle-medium.png'; ?> 480w,
+									<?php echo get_template_directory_uri() . '/assets/images/circle-large.png'; ?> 600w,
+									<?php echo get_template_directory_uri() . '/assets/images/circle-hi-dpi.png'; ?> 920w"
+								sizes="(min-width: 1550px) 50vw, (min-width: 740px) 60vw, (min-width: 500px) 55vw, 75vw" />
 							</div>
 						</div>
 						<!-- second column - text:
@@ -158,12 +158,12 @@ get_header( 'front' );
 						<!-- about us section image -->
 						<div class="c-img-sec__img-wrap">
 							<img class="lazyload c-img-sec__img c-img-sec__img--char" data-src="<?php echo get_template_directory_uri() . '/assets/images/characters-small.png'; ?>"
-																																data-srcset="<?php echo get_template_directory_uri() . '/assets/images/characters-small.png'; ?> 340w,
-																																				<?php echo get_template_directory_uri() . '/assets/images/characters-medium.png'; ?> 650w,
-																																				<?php echo get_template_directory_uri() . '/assets/images/characters-big.png'; ?> 800w,
-																																				<?php echo get_template_directory_uri() . '/assets/images/characters-large.png'; ?> 1000w,
-																																				<?php echo get_template_directory_uri() . '/assets/images/characters-hi-dpi.png'; ?> 1383w"
-																																sizes="(min-width: 1920px) 36vw, (min-width: 970px) 32vw, (min-width: 740px) 56vw, (min-width: 500px) 67vw, 90vw" />
+							data-srcset="<?php echo get_template_directory_uri() . '/assets/images/characters-small.png'; ?> 340w,
+								<?php echo get_template_directory_uri() . '/assets/images/characters-medium.png'; ?> 650w,
+								<?php echo get_template_directory_uri() . '/assets/images/characters-big.png'; ?> 800w,
+								<?php echo get_template_directory_uri() . '/assets/images/characters-large.png'; ?> 1000w,
+								<?php echo get_template_directory_uri() . '/assets/images/characters-hi-dpi.png'; ?> 1383w"
+							sizes="(min-width: 970px) 32vw, (min-width: 740px) 56vw, (min-width: 500px) 67vw, 90vw" />
 						</div>
 					</div>
 
@@ -221,12 +221,12 @@ get_header( 'front' );
 						<!-- whats in the box page section image -->
 						<div class="c-img-sec__img-wrap c-img-sec__img-wrap--box">
 							<img class="lazyload c-img-sec__img c-img-sec__img--box" data-src="<?php echo get_template_directory_uri() . '/assets/images/box-small.jpg'; ?>"
-																															data-srcset="<?php echo get_template_directory_uri() . '/assets/images/box-small.jpg'; ?> 300w,
-																																			<?php echo get_template_directory_uri() . '/assets/images/box-medium.jpg'; ?> 500w,
-																																			<?php echo get_template_directory_uri() . '/assets/images/box-big.jpg'; ?> 900w,
-																																			<?php echo get_template_directory_uri() . '/assets/images/box-large.jpg'; ?> 1300w,
-																																			<?php echo get_template_directory_uri() . '/assets/images/box-hi-dpi.jpg'; ?> 2305w"
-																															sizes="(min-width: 740px) 60vw, (min-width: 500px) 70vw, 80vw" />
+							data-srcset="<?php echo get_template_directory_uri() . '/assets/images/box-small.jpg'; ?> 300w,
+								<?php echo get_template_directory_uri() . '/assets/images/box-medium.jpg'; ?> 500w,
+								<?php echo get_template_directory_uri() . '/assets/images/box-big.jpg'; ?> 900w,
+								<?php echo get_template_directory_uri() . '/assets/images/box-large.jpg'; ?> 1300w,
+								<?php echo get_template_directory_uri() . '/assets/images/box-hi-dpi.jpg'; ?> 2305w"
+							sizes="(min-width: 740px) 60vw, (min-width: 500px) 70vw, 80vw" />
 						</div>
 					</div>
 
