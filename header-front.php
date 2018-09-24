@@ -26,16 +26,16 @@
 
 	<header id="masthead" class="site-header">
 
-		<div class="l-cl c-bg-city c-bg-city--lg">
+		<div class="c-bg-city c-bg-city--lg">
 
-			<div class="l-pos--abs c-nav--full c-nav--trans c-nav--mg">
-				<div class="l-col l-col-2">
-					<a class="toggle-nav" href="#">
+			<div class="l-pos--rel l-row l-row-sm--row-o c-nav--full c-nav--trans c-nav--mg">
+				<div class="l-c l-c-lf l-cl-sm--2 l-pos--rel">
+					<a class="toggle-nav toggle-nav--front" href="#">
   					<div class="toggle-nav__line"></div>
   				</a>
 				</div><!-- /empty space -->
 
-				<nav id="site-navigation" class="js-main-nav c-nav--to-front c-nav__nav c-nav__nav--front">
+				<nav id="site-navigation" class="js-main-nav c-nav--to-front c-nav__nav c-nav__nav--front l-cl l-cl-sm--6">
 						<?php
 						wp_nav_menu( array(
 							'theme_location' => 'menu-1',
@@ -44,8 +44,14 @@
 						?>
 				</nav><!-- /#site-navigation -->
 
-				<div class="l-col l-col-2">
-				</div><!-- /empty space -->
+				<nav id="site-navigation" class="c-nav--to-front c-nav__nav--lang l-c l-c-rg l-cl-sm--2 l-pos--rel">
+						<?php
+						wp_nav_menu( array(
+							'theme_location' => 'menu-3',
+							'menu_id'        => 'language-menu',
+						) );
+						?>
+				</nav><!-- /#site-navigation -->
 
 			</div><!-- /nav -->
 

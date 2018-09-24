@@ -44,6 +44,13 @@ General css rules
 @import "_base/base";
 
 /*
+Fonts - icons
+*/
+
+@import "_fonts/custom-fonts.scss";
+@import "_fonts/custom-fonts-style.scss";
+
+/*
 Layout for Website
 */
 @import "_layout/layout";
@@ -56,6 +63,7 @@ Layout for Website
 @import "_objects/pg-sec"; /*done*/
 
 @import "_components/nav"; /*done*/
+@import "_components/dropdown"; /*done*/
 @import "_components/toggle-nav"; /*done*/
 @import "_components/backgrounds/bg-city-main"; /*done*/
 @import "_components/backgrounds/bg-coin"; /*done*/
@@ -68,6 +76,9 @@ Layout for Website
 @import "_components/share"; /*done*/
 @import "_components/table"; /*done*/
 @import "_components/slider"; /*done*/
+@import "_components/team"; /*done*/
+@import "_components/subnav"; /*done*/
+@import "_components/next"; /*done*/
 
 
 @import "_components/footer"; /*done*/

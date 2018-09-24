@@ -13,7 +13,6 @@ class MobileMenu {
     e.preventDefault();
     this.menu.classList.toggle('js-main-nav--is-visible');
     this.burgerIcon.classList.toggle('toggle-nav--close-x');
-    console.log('burger clicked');
   }
 }
 

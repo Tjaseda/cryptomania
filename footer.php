@@ -49,7 +49,7 @@
 		<div class="c-nav--purple">
 			<div class="l-container">
 				<div class="c-nav__site-info">
-					<img class="c-nav__site-info__logo" src="<?php echo get_template_directory_uri() . '/assets/images/wololo-logo.svg'; ?>" alt="wololo" />
+					<a href="#" title="Wololo"><i class="icon-wololo icon-30 c-nav__site-info__logo"></i></a>
 					<p class="c-nav__site-info__text">© 2018 Wololo</p>
 				</div>
 
@@ -64,8 +64,8 @@
 
 				<div class="c-nav__social">
 					<div>
-						<img class="c-nav__social__icon c-nav__social__icon--twitter" src="<?php echo get_template_directory_uri() . '/assets/images/icon_twitter.svg'; ?>" alt="twitter" />
-						<img class="c-nav__social__icon c-nav__social__icon--facebook" src="<?php echo get_template_directory_uri() . '/assets/images/icon_facebook.svg'; ?>" alt="facebook" />
+						<a href="#" title="Twitter" target="_blank"><i class="icon-Icon_Twitter_blank icon-22 c-nav__social__icon"></i></a>
+						<a href="#" title="Facebook" target="_blank"><i class="icon-Icon_Facebook_blank icon-22 c-nav__social__icon"></i></a>
 					</div>
 				</div>
 

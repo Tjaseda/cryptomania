@@ -49,6 +49,19 @@
         flex-direction: column-reverse;
       }
     }
+
+    &-lg--row-o {
+      @include breakpoint(desktopMd) {
+        flex-direction: row;
+      }
+    }
+
+    &-sm--row-o {
+      @include breakpoint(medium) {
+        flex-direction: row;
+      }
+    }
+
     &--row-o {
       @include breakpoint(mediumLarge) {
         flex-direction: row;
@@ -79,6 +92,11 @@
     }
     &--row-r {
       @include breakpoint(desktop) {
+        flex-direction: column;
+      }
+    }
+    &-md--col-o {
+      @include breakpoint(desktopMd) {
         flex-direction: column;
       }
     }
@@ -108,6 +126,19 @@
   }
 }
 
+.l-c {
+  display: flex;
+  align-items: center;
+
+  &-lf {
+    justify-content: flex-start;
+  }
+
+  &-rg {
+    justify-content: flex-end;
+  }
+}
+
 .l-cl {
   display: flex;
   justify-content: center;
@@ -117,9 +148,29 @@
     &--10 {
       width: 100%;
     }
+
+    &--2 {
+      width: 20%;
+    }
+
+    &--6 {
+      width: 60%;
+    }
   }
 
   &-md {
+    &-sm--4 {
+      @include breakpoint(medium) {
+        width: 40%;
+      }
+    }
+
+    &-sm--6 {
+      @include breakpoint(medium) {
+        width: 60%;
+      }
+    }
+
     &--3 {
       @include breakpoint(mediumLarge) {
         width: 30%;
@@ -140,16 +191,52 @@
   }
 
   &-ds {
+    &--3 {
+      @include breakpoint(desktop) {
+        width: 30%;
+      }
+    }
+
+    &--4 {
+      @include breakpoint(desktop) {
+        width: 40%;
+      }
+    }
+
     &--5 {
       @include breakpoint(desktop) {
         width: 50%;
+      }
+    }
+
+    &--6 {
+      @include breakpoint(desktop) {
+        width: 60%;
+      }
+    }
+
+    &--7 {
+      @include breakpoint(desktop) {
+        width: 70%;
+      }
+    }
+
+    &-lg--10 {
+      @include breakpoint(desktopMd) {
+        width: 100%;
+      }
+    }
+
+    &-lg--3 {
+      @include breakpoint(desktopMd) {
+        width: 30%;
       }
     }
   }
 
   &-lg {
     &--5 {
-      @include breakpoint(desktopLarge) {
+      @include breakpoint(desktopMd) {
         width: 50%;
       }
     }

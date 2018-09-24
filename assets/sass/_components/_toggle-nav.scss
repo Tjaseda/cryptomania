@@ -11,10 +11,12 @@
   width: 37px;
   padding: 5px;
   position: absolute;
-  top: -5px;
   left: 15px;
   z-index: 55;
 
+  &--front {
+    top: -5px;
+  }
 
   &__line, &::before, &::after {
     background-color: $green;

@@ -26,12 +26,16 @@
 
 	<header id="masthead" class="site-header">
 
-		<div class="c-nav--white c-nav--mg">
-			<div class="l-col l-col-2">
+		<div class="l-pos--rel c-nav--white c-nav--mg l-row l-row-sm--row-o">
+			<div class="l-c l-c-lf l-cl-sm--2 l-pos--rel ">
+				<a class="toggle-nav" href="#">
+					<div class="toggle-nav__line"></div>
+				</a><!-- /toggle nav -->
+
 				<a href="<?php echo home_url(); ?>"><img class="c-nav__logo" src="<?php echo get_template_directory_uri() . '/assets/images/logo-2.png'; ?>" alt="<?php bloginfo( 'name' ); ?>" /></a>
 			</div><!-- /logo -->
 
-			<nav id="site-navigation" class="c-nav__nav c-nav__nav--page">
+			<nav id="site-navigation" class="js-main-nav c-nav__nav c-nav__nav--page l-cl l-cl-sm--6">
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
@@ -40,8 +44,14 @@
 				?>
 			</nav><!-- #site-navigation -->
 
-			<div class="l-col l-col-2">
-			</div><!-- /empty space -->
+			<nav id="site-navigation" class="c-nav--to-front c-nav__nav--lang-page l-c l-c-rg l-cl-sm--2 l-pos--rel">
+					<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-3',
+						'menu_id'        => 'language-menu',
+					) );
+					?>
+			</nav><!-- /#site-navigation -->
 
 		</div><!-- /navigation -->
 
@@ -79,7 +89,7 @@
       if ($children) {
       ?>
 
-          <ul class="subnav">
+          <ul class="c-subnav">
               <?php
                   // current child will have class 'current_page_item'
                   echo $children;
@@ -87,7 +97,7 @@
           </ul>
 
       <?php
-      } 
+      }
       ?>
 
 	</header><!-- #masthead -->

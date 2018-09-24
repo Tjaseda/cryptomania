@@ -1,19 +1,25 @@
 .table {
-  display: none;
-
-  @include breakpoint(desktop) {
-    display: flex;
-  }
+  width: 100%;
 }
 
 .c-table {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   border-collapse: separate;
-  border-spacing: 30px 0;
+  border-spacing: 2px 0;
+
+  @include breakpoint(medium) {
+    border-spacing: 10px 0;
+  }
+
+  @include breakpoint(desktop) {
+    width: 80%;
+    border-spacing: 20px 0;
+  }
 
   @include breakpoint(desktopLarge) {
     width: 60%;
+    border-spacing: 30px 0;
   }
 
   /*General table styles*/
@@ -48,7 +54,11 @@
       th {
         border: 2px solid $t-purple-dark;
         color: white;
-        font-size: calculateRem(24px);
+        font-size: calculateRem(20px);
+
+        @include breakpoint(medium) {
+          font-size: calculateRem(24px);
+        }
       }
 
       td {
@@ -87,7 +97,16 @@
     tr {
       th {
         color: $purple;
-        font-size: calculateRem(36px);
+        font-size: calculateRem(26px);
+      }
+    }
+
+    @include breakpoint(desktop) {
+      tr {
+        th {
+          color: $purple;
+          font-size: calculateRem(36px);
+        }
       }
     }
 

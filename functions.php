@@ -45,7 +45,8 @@ if ( ! function_exists( 'cryptomania_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'cryptomania' ),
-			'menu-2' => esc_html__( 'Footer', 'cryptomania' )
+			'menu-2' => esc_html__( 'Footer', 'cryptomania' ),
+			'menu-3' => esc_html__( 'Language', 'cryptomania' )
 		) );
 
 		/*
@@ -176,3 +177,22 @@ function cryptomania_add_editor_styles() {
 }
 
 add_action( 'admin_init', 'cryptomania_add_editor_styles' );
+
+/*
+Icons config
+*/
+
+function my_header_elements() { ?>
+<ul class="social">
+	<li><a href="#"><span class="icon-arrow-down"></span></a></li>
+	<li><a href="#"><span class="icon-arrow-left"></span></a></li>
+	<li><a href="#"><span class="icon-arrow-right"></span></a></li>
+	<li><a href="#"><span class="icon-check"></span></a></li>
+	<li><a href="#"><span class="icon-email1"></span></a></li>
+ 	<li><a href="#"><span class="icon-Icon_Facebook_blank"></span></a></li>
+ 	<li><a href="#"><span class="icon-Icon_Twitter_blank"></span></a></li>
+	<li><a href="#"><span class="icon-wololo"></span></a></li>
+</ul>
+ <?php
+}
+add_action( 'hybrid_header', 'my_header_elements' );

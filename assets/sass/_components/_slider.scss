@@ -6,12 +6,12 @@
   overflow: hidden;
 
   @include breakpoint(small) {
-    height: 320px;
+    height: 340px;
     width: 80%;
   }
 
   @include breakpoint(medium) {
-    height: 340px;
+    height: 350px;
   }
 
   @include breakpoint(mediumLarge) {
@@ -107,7 +107,6 @@
 
   &__cour {
     text-decoration: none;
-    font-size: 70px;
     position: absolute;
     z-index: 70;
     line-height: 50px;
@@ -118,7 +117,6 @@
     transition: all 150ms ease;
 
     @include breakpoint(mediumLarge) {
-      font-size: 50px;
       top: 50%;
       transform: translateY(-50%);
     }

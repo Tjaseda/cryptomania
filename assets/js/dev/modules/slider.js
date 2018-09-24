@@ -9,13 +9,13 @@ class Slider {
     this.slides = this.slideList.querySelectorAll("#slide");
     this.prev = document.getElementById("prev");
     this.next = document.getElementById("next");
+    this.setSlidesWidth();
+    this.moveSlides();
     this.events();
 
   }
 
   events() {
-    window.addEventListener('load', this.setSlidesWidth.bind(this)); // when page loads the width of slides is set to be the same as slider width
-    window.addEventListener('load', this.moveSlides.bind(this));
     window.addEventListener('resize', this.setSliderWidth.bind(this)); // when window is resized sliderWidth is reset
     window.addEventListener('resize', this.setSlidesWidth.bind(this)); // when window is resized the width of slides is set to be the same as slider width
     this.next.addEventListener('click', this.prevDef.bind(this));

@@ -23,6 +23,14 @@ Page Section Styles
     padding: $offset50 $offset10;
 
     @include breakpoint(mediumLarge) {
+      padding: 90px $offset40;
+    }
+
+    @include breakpoint(desktopMd) {
+      padding: 150px $offset40;
+    }
+
+    @include breakpoint(desktopLg) {
       padding: 180px $offset40;
     }
   }
@@ -35,7 +43,7 @@ Page Section Styles
     }
 
     @include breakpoint(desktop) {
-      padding: 110px $offset40;
+      padding: 100px $offset40;
     }
   }
 

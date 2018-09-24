@@ -32,7 +32,6 @@ get_header( 'front' );
 					<?php echo get_template_directory_uri() . '/assets/images/coin-hi-dpi.png'; ?> 1536w"
 				sizes="(min-width: 1550px) 40vw, (min-width: 970px) 50vw, 20vw" />
 
-				<!-- <img class="c-bg-coin__img c-bg-coin__img--bottom" src="<?php echo get_template_directory_uri() . '/assets/images/coin-bg.png'; ?>" alt="bitcoin bg" /> -->
 			</div>
 
 			<div class="l-container">
@@ -52,7 +51,7 @@ get_header( 'front' );
 								<h2 class="o-h o-h__2 o-txt--purple o-txt--ps-left">What is Cryptomania?</h2><br />
 								<p class="o-s o-s__2 o-txt--orange-dark o-txt--ps-left">Wild, Educational, Fun & Unpredictable</p><br />
 								<p class="o-s o-s__1 o-txt--gray o-txt--ps-t-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet dolor ac risus mattis posuere ac id quam. Fusce id dolor scelerisque.</p><br />
-								<a class="o-a o-txt--green o-txt--ps-left" href="#">Learn More</a>
+								<a class="o-a o-txt--green o-txt--ps-left" href="#"><i class="icon-arrow-right icon-sm"></i> Learn More</a>
 							</div>
 					</div>
 
@@ -112,12 +111,12 @@ get_header( 'front' );
 						* on small screen is 100% width with centered text,
 						* from desktop screen is 50% width, with text positioned right
 						-->
-						<div class="l-cl l-cl-sm--10 l-cl-ds--5">
+						<div class="l-cl l-cl-sm--10 l-cl-ds--5 l-mg-t--2 l-mg-t-md--4 l-mg-t-ds--0">
 								<div class="l-wrap">
 									<h2 class="o-h o-h__2 o-txt--white o-txt--ps-right">How to play?</h2><br />
 									<p class="o-s o-s__2 o-txt--orange-light o-txt--ps-right">Simple for everyone!</p><br />
 									<p class="o-s o-s__1 o-txt--white-tr o-txt--ps-t-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet dolor ac risus mattis posuere ac id quam. Fusce id dolor scelerisque.</p><br />
-									<a class="o-a o-txt--green o-txt--ps-right" href="#">Learn More</a>
+									<a class="o-a o-txt--green o-txt--ps-right" href="#"><i class="icon-arrow-right icon-sm"></i> Learn More</a>
 								</div>
 						</div>
 
@@ -141,12 +140,12 @@ get_header( 'front' );
 					* on small screen is 100% width with centered text,
 					* from desktop screen is 50% width, with text positioned left
 					-->
-					<div class="l-cl l-cl-sm--10 l-cl-ds--5">
+					<div class="l-cl l-cl-sm--10 l-cl-ds--5 l-mg-t--2 l-mg-t-md--4 l-mg-t-ds--0">
 						<div class="l-wrap">
 							<h2 class="o-h o-h__2 o-txt--purple o-txt--ps-left">About us</h2><br />
 							<p class="o-s o-s__2 o-txt--orange-dark o-txt--ps-left">Creators of Cryptomania</p><br />
 							<p class="o-s o-s__1 o-txt--gray o-txt--ps-t-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet dolor ac risus mattis posuere ac id quam. Fusce id dolor scelerisque.</p><br />
-							<a class="o-a o-txt--green o-txt--ps-left" href="#">Learn More</a>
+							<a class="o-a o-txt--green o-txt--ps-left" href="#"><i class="icon-arrow-right icon-sm"></i> Learn More</a>
 						</div>
 					</div>
 					<!-- second column - image:
@@ -192,8 +191,9 @@ get_header( 'front' );
 					<!-- share component -->
 					<div class="c-share">
 						<div class="c-share__icon-wrap">
-							<a id="share" href="https://twitter.com/intent/tweet?text=https://www.youtube.com/watch?v=dmo_u2zMd7o" target="_blenk"><img class="c-share__icon c-share__icon--twitter" src="<?php echo get_template_directory_uri() . '/assets/images/icon_twitter.svg'; ?>" alt="twitter" /></a>
-							<a id="share" href="https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=dmo_u2zMd7o" target="_blank"><img class="c-share__icon c-share__icon--facebook" src="<?php echo get_template_directory_uri() . '/assets/images/icon_facebook.svg'; ?>" alt="facebook" /></a>
+							<a id="share" href="https://twitter.com/intent/tweet?text=https://www.youtube.com/watch?v=dmo_u2zMd7o" target="_blenk"><i class="icon-Icon_Twitter_blank icon-20 c-share__icon c-share__icon--twitter"></i></a>
+							<a id="share" href="https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=dmo_u2zMd7o" target="_blank"><i class="icon-Icon_Facebook_blank icon-20 c-share__icon c-share__icon--facebook"></i></a>
+							<a id="mail" href="mailto:someone@example.com?Subject=https://www.youtube.com/watch?v=dmo_u2zMd7o" target="_blank"><i class="icon-email1 icon-17 c-share__icon"></i></a>
 						</div>
 					</div>
 
@@ -219,8 +219,8 @@ get_header( 'front' );
 					-->
 					<div class="l-cl l-cl-sm--10 l-cl-ds--5">
 						<!-- whats in the box page section image -->
-						<div class="c-img-sec__img-wrap c-img-sec__img-wrap--box">
-							<img class="lazyload c-img-sec__img c-img-sec__img--box" data-src="<?php echo get_template_directory_uri() . '/assets/images/box-small.jpg'; ?>"
+						<div class="c-img-sec__img-wrap c-img-sec__img-wrap--box c-img-sec__img-wrap--box-left">
+							<img class="lazyload c-img-sec__img c-img-sec__img--box c-img-sec__img--box-left" data-src="<?php echo get_template_directory_uri() . '/assets/images/box-small.jpg'; ?>"
 							data-srcset="<?php echo get_template_directory_uri() . '/assets/images/box-small.jpg'; ?> 300w,
 								<?php echo get_template_directory_uri() . '/assets/images/box-medium.jpg'; ?> 500w,
 								<?php echo get_template_directory_uri() . '/assets/images/box-big.jpg'; ?> 900w,
@@ -235,77 +235,16 @@ get_header( 'front' );
 					* on small screen is 100% with centered text,
 					* from desktop screen is 50% width with text align right
 					-->
-					<div class="l-cl l-cl-sm--10 l-cl-ds--5">
+					<div class="l-cl l-cl-sm--10 l-cl-ds--5 l-mg-t--2 l-mg-t-md--4 l-mg-t-ds--0">
 						<div class="l-wrap">
 							<h2 class="o-h o-h__2 o-txt--purple o-txt--ps-right">What's in the box?</h2><br />
 							<p class="o-s o-s__2 o-txt--orange-dark o-txt--ps-right">Choose your version</p><br />
 							<p class="o-s o-s__1 o-txt--gray o-txt--ps-t-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet dolor ac risus mattis posuere ac id quam. Fusce id dolor scelerisque.</p><br />
-							<a class="o-a o-txt--green o-txt--ps-right" href="#">Learn More</a>
+							<a class="o-a o-txt--green o-txt--ps-right" href="#"><i class="icon-arrow-right icon-sm"></i> Learn More</a>
 						</div>
 					</div>
 				</div><!-- /row -->
 
-				<!--
-				* second flexbox row:
-				* just displays flexbox
-				-->
-				<div class="l-row table">
-					<!-- first column - tables:
-					* flexbox column with verticaly centered content:
-					* always has 100% width
-					-->
-					<div class="l-cl l-cl-sm--10">
-						<!-- adds top margin to this div -->
-						<div class="l-wrap l-mg-t--10">
-							<table class="c-table c-table--box">
-								<tr>
-							    <th>Includes</th>
-							    <th>Regular</th>
-							    <th>Premium</th>
-							  </tr>
-							  <tr>
-							    <td>Lorem ipsum dolor sit amet.</td>
-							    <td></td>
-							    <td></td>
-							  </tr>
-							  <tr>
-							    <td>Dolor sit amet.</td>
-							    <td></td>
-							    <td></td>
-							  </tr>
-								<tr>
-							    <td>Consectetur.</td>
-							    <td></td>
-							    <td></td>
-							  </tr>
-								<tr>
-							    <td>Lorem ipsum dolor sit amet.</td>
-							    <td></td>
-							    <td></td>
-							  </tr>
-							  <tr>
-							    <td>Dolor sit amet.</td>
-							    <td></td>
-							    <td></td>
-							  </tr>
-								<tr>
-							    <td>Consectetur.</td>
-							    <td></td>
-							    <td></td>
-							  </tr>
-							</table><!-- /box comparisone table -->
-
-							<table class="c-table c-table--price l-pd-t--2">
-								<tr>
-									<th></th>
-									<th>$ 16,90</th>
-									<th>$ 24,90</th>
-								</tr>
-							</table><!-- /price table -->
-
-						</div><!-- /wrap -->
-					</div><!-- /column -->
-				</div><!-- /row -->
 			</div><!-- /container -->
 		</div><!-- /page section -->
 
@@ -322,8 +261,8 @@ get_header( 'front' );
 				<div class="l-cl l-cl-sm--10">
 					<div class="l-wrap">
 
-						<a href="#"><p id="prev" class="c-slider__cour c-slider__cour--prev">&#8249;</p></a>
-						<a href="#"><p id="next" class="c-slider__cour c-slider__cour--next">&#8250;</p></a>
+						<a href="#"><i id="prev" class="icon-arrow-left icon-30 c-slider__cour c-slider__cour--prev"></i></a>
+						<a href="#"><i id="next" class="icon-arrow-right icon-30 c-slider__cour c-slider__cour--next"></i></a>
 
 						<p class="c-slider__blockquote">&#8221;</p>
 

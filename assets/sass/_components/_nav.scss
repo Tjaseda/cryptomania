@@ -1,4 +1,4 @@
-li.current-menu-item a,  li.current-page-ancestor a, li.current_page_item a {
+.menu li.current-menu-item a, .menu li.current-page-ancestor a, .menu li.current_page_item a, .c-subnav li.current_page_item a, .menu li.current-menu-item a {
   color: $green;
 }
 
@@ -28,6 +28,11 @@ li.current-menu-item a,  li.current-page-ancestor a, li.current_page_item a {
 
   &--white {
     background-color: $white;
+    height: 10px;
+
+    @include breakpoint(desktopLarge) {
+      height: 30px;
+    }
   }
 
   &--purple {
@@ -67,13 +72,13 @@ li.current-menu-item a,  li.current-page-ancestor a, li.current_page_item a {
     }
 
     &__logo {
-      width: 55px;
+      text-align: center;
       display: block;
       margin: 0 auto;
       padding-bottom: $offset10;
 
       @include breakpoint(medium) {
-        width: 52px;
+        text-align: left;
         display: inline-block;
         vertical-align: middle;
         margin-right: $offset5;
@@ -81,7 +86,6 @@ li.current-menu-item a,  li.current-page-ancestor a, li.current_page_item a {
       }
 
       @include breakpoint(desktop) {
-        width: 58px;
         margin-right: $offset10;
       }
 
@@ -140,25 +144,27 @@ li.current-menu-item a,  li.current-page-ancestor a, li.current_page_item a {
     &__icon {
       margin: 0 $offset5;
       vertical-align: middle;
-
-      @include breakpoint(medium) {
-        margin: 0 $offset10;
-      }
-
-      &--facebook {
-        width: 12px;
-      }
-
-      &--twitter {
-        width: 25px;
-      }
     }
   }
 
   &__logo {
-    width: 50%;
-    vertical-align: middle;
-    margin-left: $offset50;
+    display: none;
+
+    @include breakpoint(mediumLarge) {
+      display: block;
+      width: 90%;
+      vertical-align: middle;
+      margin-left: $offset20;
+    }
+
+    @include breakpoint(desktop) {
+      width: 75%;
+      margin-left: $offset40;
+    }
+
+    @include breakpoint(desktopLarge) {
+      width: 70%;
+    }
   }
 
   &__nav {
@@ -209,32 +215,40 @@ li.current-menu-item a,  li.current-page-ancestor a, li.current_page_item a {
       display: none;
       width: 100%;
       position: absolute;
-      top: -5px;
+      top: 5px;
       left: 0;
       right: 0;
       margin: 0 auto;
       z-index: 50;
       transition: all 0.2s ease-out;
+      background-color: $purple-dark;
 
       ul {
         li {
           display: block;
-          margin: 10px 0;
+          margin: 15px 0;
           a {
             color: $white;
           }
         }
       }
 
+      /* does not display home link on front page navigation */
+      .home-link {
+        display: none;
+      }
+
       @include breakpoint(mediumLarge) {
         position: relative;
+        top: 0;
         width: 59%;
         display: block;
+        background-color: transparent;
 
         ul {
           li {
             display: inline-block;
-            margin: 0 12px;
+            margin: 0 15px;
             a {
             }
           }
@@ -242,15 +256,65 @@ li.current-menu-item a,  li.current-page-ancestor a, li.current_page_item a {
       }
     }
 
-
-
     &--page {
-      display: inline-block;
-      width: 59%;
+      display: none;
+      width: 100%;
+      position: absolute;
+      top: 7px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      z-index: 50;
+      transition: all 0.2s ease-out;
+      background-color: $white;
 
-      a {
-        color: $menu_purple;
+      ul {
+        li {
+          display: block;
+          margin: 15px 0;
+          a {
+            color: $menu_purple;
+          }
         }
+      }
+
+      .home-link {
+        @include breakpoint(mediumLarge) {
+          display: none;
+        }
+      }
+
+      @include breakpoint(mediumLarge) {
+        position: unset;
+        width: 59%;
+        display: flex;
+        margin: 0;
+
+        ul {
+          li {
+            display: inline-block;
+            margin: 0px 15px;
+          }
+        }
+      }
+    }
+
+    &--lang {
+      position: absolute;
+      top: 0;
+      right: 15px;
+
+      @include breakpoint(mediumLarge) {
+        position: relative;
+        right: 0;
+      }
+
+      &-page {
+        position: absolute;
+        top: 5px;
+        bottom: 0;
+        right: 15px;
+      }
     }
 
     &--footer {
