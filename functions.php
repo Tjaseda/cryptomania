@@ -209,7 +209,7 @@ add_filter( 'post_thumbnail_html', 'cryptomania_remove_img_attr' );
 /*
 Replaces src attributes with data-src for lazyloading images
 */
-function lazy_load_responsive_images_modify_post_thumbnail_attr( $attr, $attachment, $size ) {
+function cryptomania_lazy_load_post_thumbnail_attr( $attr, $attachment, $size ) {
 
    if ( isset( $attr['srcset'] ) ) {
 		 $data_src = $attr['src'];
@@ -223,7 +223,7 @@ function lazy_load_responsive_images_modify_post_thumbnail_attr( $attr, $attachm
 
    return $attr;
 }
-add_filter( 'wp_get_attachment_image_attributes', 'lazy_load_responsive_images_modify_post_thumbnail_attr', 20, 3);
+add_filter( 'wp_get_attachment_image_attributes', 'cryptomania_lazy_load_post_thumbnail_attr', 20, 3);
 
 /*
 Icons config

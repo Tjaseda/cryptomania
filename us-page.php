@@ -21,17 +21,10 @@ get_header();
   </div>
 
   <div class="l-container">
-    <!--
-    * flexbox row:
-    * on small screen displays column with reverse order,
-    * from desktop screen on displays ordered row
-    -->
+    <!-- flexbox row -->
     <div class="l-row l-row-sm--col-r l-row-ds--row-o">
-      <!-- first column - text:
-      * flexbox column with verticaly centered content:
-      * on small screen is 100% width with centered text,
-      * from desktop screen is 50% width, with text positioned left
-      -->
+
+      <!-- first column -->
       <div class="l-cl l-cl-sm--10 l-cl-ds--6">
           <div class="l-wrap"> <!-- takes care of padding on small screen - content does not touch the screen -->
             <h2 class="o-h o-h__2 o-txt--purple o-txt--ps-left">Get to know the team</h2><br />
@@ -39,69 +32,20 @@ get_header();
               <br /><br />Praesent pharetra urna ligula. Aenean et tincidunt ipsum, sed porta justo. Mauris ac tortor nec erat efficitur iaculis. Fusce ligula ligula, sollicitudin at arcu non, feugiat pellentesque risus. Ut hendrerit ligula ac ligula suscipit fermentum. Duis laoreet iaculis congue. Vivamus blandit lorem sed scelerisque hendrerit. Pellentesque hendrerit nulla malesuada, vestibulum nisi non, tempor turpis.</p><br />
           </div>
       </div>
-
-      <!-- second column - empty:
-      * flexbox column with verticaly centered content:
-      * on small screen is 100% width with centered text,
-      * from desktop screen is 50% width
-      -->
+      <!-- second column -->
       <div class="l-cl l-cl-sm--10 l-cl-ds--4 l-mg-y--2">
         <img class="lazyload c-img-sec__img c-img-sec__img--logo" data-srcset="<?php echo get_template_directory_uri() . '/assets/images/wololo-dark.svg'; ?>" />
       </div>
 
     </div><!-- /row -->
   </div><!-- /container -->
-
 </div><!-- /page section -->
 
-<div class="o-pg-sec o-pg-sec--purple-lg o-pg-sec--pd-md">
-  <div class="l-container">
-    <div class="l-row l-row-sm--col-o l-row-md-lg--row-o">
 
-      <div class="l-cl l-cl-sm--10">
-        <div class="l-row l-row-sm--col-o l-row-md-sm--row-o l-row-ds-md--col-o c-team__wrap l-mg-y--4 l-mg-ds--0">
-
-          <div class="l-cl l-cl-sm--10 l-cl-md-sm--4 l-cl-ds-lg--10 c-team__img-wrap">
-            <img class="c-team__image" src="<?php echo get_template_directory_uri() . '/assets/images/feko.jpg'; ?>" />
-          </div>
-          <div class="l-cl l-cl-sm--10 l-cl-md-sm--6 l-cl-ds-lg--10 c-team__txt-wrap l-mg-t--3 l-mg-t-md-sm--0 l-mg-t-ds-lg--3">
-            <p class="c-team__text c-team__name">Boštjan Fekonja</p>
-            <p class="c-team__text c-team__position">CEO</p>
-            <p class="c-team__text c-team__txt">Cryptomania is like Monopoly upgraded! So much fun!</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="l-cl l-cl-sm--10">
-        <div class="l-row l-row-sm--col-o l-row-md-sm--row-o l-row-ds-md--col-o c-team__wrap l-mg-y--4 l-mg-ds--0">
-
-          <div class="l-cl l-cl-sm--10 l-cl-md-sm--4 l-cl-ds-lg--10 c-team__img-wrap">
-            <img class="c-team__image" src="<?php echo get_template_directory_uri() . '/assets/images/kuko.jpg'; ?>" />
-          </div>
-          <div class="l-cl l-cl-sm--10 l-cl-md-sm--6 l-cl-ds-lg--10 c-team__txt-wrap l-mg-t--3 l-mg-t-md-sm--0 l-mg-t-ds-lg--3">
-            <p class="c-team__text c-team__name">Jan Kukovič</p>
-            <p class="c-team__text c-team__position">Strategist</p>
-            <p class="c-team__text c-team__txt">Cryptomania is like Monopoly upgraded! So much fun!</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="l-cl l-cl-sm--10">
-        <div class="l-row l-row-sm--col-o l-row-md-sm--row-o l-row-ds-md--col-o c-team__wrap l-mg-y--4 l-mg-ds--0">
-          <div class="l-cl l-cl-sm--10 l-cl-md-sm--4 l-cl-ds-lg--10 c-team__img-wrap">
-            <img class="c-team__image" src="<?php echo get_template_directory_uri() . '/assets/images/baci.jpg'; ?>" />
-          </div>
-          <div class="l-cl l-cl-sm--10 l-cl-md-sm--6 l-cl-ds-lg--10 c-team__txt-wrap l-mg-t--3 l-mg-t-md-sm--0 l-mg-t-ds-lg--3">
-            <p class="c-team__text c-team__name">Robert Fekonja</p>
-            <p class="c-team__text c-team__position">Product</p>
-            <p class="c-team__text c-team__txt">Cryptomania is like Monopoly upgraded! So much fun!</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
+<!--TEAM PAGE SECTION:
+* page section with light purple background and small padding
+-->
+  <?php get_template_part( 'template-parts/team' ); ?>
 
 <?php
 get_footer();

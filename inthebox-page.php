@@ -61,63 +61,6 @@ get_header( 'child' );
       </div>
 
     </div><!-- /row -->
-
-    <div class="l-row table">
-      <!-- first column - tables:
-      * flexbox column with verticaly centered content:
-      * always has 100% width
-      -->
-      <div class="l-cl l-cl-sm--10 l-mg-t--2 l-mg-t-md--4 l-mg-t-ds--0">
-        <!-- adds top margin to this div -->
-        <div class="l-mg-t-ds--10 l-w--full">
-          <table class="c-table c-table--box">
-            <tr>
-              <th>Includes</th>
-              <th>Regular</th>
-              <th>Premium</th>
-            </tr>
-            <tr>
-              <td>Lorem ipsum dolor sit amet.</td>
-              <td><i class="icon-check icon-22"></i></td>
-              <td><i class="icon-check icon-22"></i></td>
-            </tr>
-            <tr>
-              <td>Dolor sit amet.</td>
-              <td><i class="icon-check icon-22"></i></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Consectetur.</td>
-              <td></td>
-              <td><i class="icon-check icon-22"></i></td>
-            </tr>
-            <tr>
-              <td>Lorem ipsum dolor sit amet.</td>
-              <td></td>
-              <td><i class="icon-check icon-22"></i></td>
-            </tr>
-            <tr>
-              <td>Dolor sit amet.</td>
-              <td><i class="icon-check icon-22"></i></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Consectetur.</td>
-              <td></td>
-              <td><i class="icon-check icon-22"></i></td>
-            </tr>
-          </table><!-- /box comparisone table -->
-
-          <table class="c-table c-table--price l-pd-t--2">
-            <tr>
-              <th></th>
-              <th>$ 16,90</th>
-              <th>$ 24,90</th>
-            </tr>
-          </table><!-- /price table -->
-        </div>
-      </div>
-    </div>
   </div><!-- /container -->
 </div><!-- /page section -->
 

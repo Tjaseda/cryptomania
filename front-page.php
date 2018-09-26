@@ -8,9 +8,7 @@
 get_header( 'front' );
 ?>
 
-		<!--WHAT IS CRYPTOMANIA PAGE SECTION:
-		* page section with withe background and large padding
-		-->
+		<!--WHAT IS CRYPTOMANIA PAGE SECTION -->
 		<div class="o-pg-sec o-pg-sec--white o-pg-sec--pd-md">
 			<!-- top coin background image-->
 			<div class="c-bg-coin c-bg-coin--top">
@@ -31,59 +29,36 @@ get_header( 'front' );
 					<?php echo get_template_directory_uri() . '/assets/images/coin-large.png'; ?> 1000w,
 					<?php echo get_template_directory_uri() . '/assets/images/coin-hi-dpi.png'; ?> 1536w"
 				sizes="(min-width: 1550px) 40vw, (min-width: 970px) 50vw, 20vw" />
-
 			</div>
 
 			<div class="l-container">
-				<!--
-				* flexbox row:
-				* on small screen displays column with reverse order,
-				* from desktop screen on displays ordered row
-				-->
+				<!-- flexbox row -->
 				<div class="l-row l-row-sm--col-r l-row-ds--row-o">
-					<!-- first column - text:
-					* flexbox column with verticaly centered content:
-					* on small screen is 100% width with centered text,
-					* from desktop screen is 50% width, with text positioned left
-					-->
-					<div class="l-cl l-cl-sm--10 l-cl-ds--5 l-pd-t--7 l-pd-t--sm-8">
-							<div class="l-wrap"> <!-- takes care of padding on small screen - content does not touch the screen -->
-								<h2 class="o-h o-h__2 o-txt--purple o-txt--ps-left">What is Cryptomania?</h2><br />
-								<p class="o-s o-s__2 o-txt--orange-dark o-txt--ps-left">Wild, Educational, Fun & Unpredictable</p><br />
-								<p class="o-s o-s__1 o-txt--gray o-txt--ps-t-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet dolor ac risus mattis posuere ac id quam. Fusce id dolor scelerisque.</p><br />
-								<a class="o-a o-txt--green o-txt--ps-left" href="#"><i class="icon-arrow-right icon-sm"></i> Learn More</a>
-							</div>
-					</div>
 
-					<!-- second column - empty:
-					* flexbox column with verticaly centered content:
-					* on small screen is 100% width with centered text,
-					* from desktop screen is 50% width
-					-->
+					<!-- first column -->
+					<div class="l-cl l-cl-sm--10 l-cl-ds--5 l-pd-t--7 l-pd-t--sm-8">
+						<div class="l-wrap"> <!-- takes care of padding on small screen - content does not touch the screen -->
+							<h2 class="o-h o-h__2 o-txt--purple o-txt--ps-left">What is Cryptomania?</h2><br />
+							<p class="o-s o-s__2 o-txt--orange-dark o-txt--ps-left">Wild, Educational, Fun & Unpredictable</p><br />
+							<p class="o-s o-s__1 o-txt--gray o-txt--ps-t-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet dolor ac risus mattis posuere ac id quam. Fusce id dolor scelerisque.</p><br />
+							<a class="o-a o-txt--green o-txt--ps-left" href="#"><i class="icon-arrow-right icon-sm"></i> Learn More</a>
+						</div>
+					</div>
+					<!-- second column -->
 					<div class="l-cl l-cl-sm--10 l-cl-ds--5">
 					</div>
 
 				</div><!-- /row -->
 			</div><!-- /container -->
-
 		</div><!-- /page section -->
 
-		<!--HOW TO PLAY PAGE SECTION:
-		* page section with purple background and medium padding
-		-->
+		<!--HOW TO PLAY PAGE SECTION -->
 		<div class="o-pg-sec o-pg-sec--purple o-pg-sec--pd-md">
 			<div class="l-container">
-				<!--
-				* flexbox row:
-				* on small screen displays ordered column,
-				* from desktop screen on displays ordered row
-				-->
+				<!-- flexbox row -->
 				<div class="l-row l-row-sm--col-o l-row-ds--row-o">
-					<!-- first column - image:
-					* flexbox column with verticaly centered content:
-					* on small screen is 100% width with centered text,
-					* from desktop screen is 50% width
-					-->
+
+					<!-- first column -->
 						<div class="l-cl l-cl-sm--10 l-cl-ds--5 l-pos--rel">
 							<!-- full city background that gets displayed from desktop width on-->
 							<div class="c-bg-cityfull l-pos--abs">
@@ -96,7 +71,7 @@ get_header( 'front' );
 									<?php echo get_template_directory_uri() . '/assets/images/cityfull-hi-dpi.png'; ?> 2150w"
 								sizes="(min-width: 970px) 56vw, 20vw" />
 							</div>
-							<!-- image of how to play page section that is always displayed-->
+							<!-- top image of how to play page section-->
 							<div class="c-bg-cityfull__img-top">
 								<img class="lazyload c-bg-cityfull__image" data-src="<?php echo get_template_directory_uri() . '/assets/images/circle-small.png'; ?>"
 								data-srcset="<?php echo get_template_directory_uri() . '/assets/images/circle-small.png'; ?> 380w,
@@ -106,11 +81,7 @@ get_header( 'front' );
 								sizes="(min-width: 1550px) 50vw, (min-width: 740px) 60vw, (min-width: 500px) 55vw, 75vw" />
 							</div>
 						</div>
-						<!-- second column - text:
-						* flexbox column with verticaly centered content:
-						* on small screen is 100% width with centered text,
-						* from desktop screen is 50% width, with text positioned right
-						-->
+						<!-- second column -->
 						<div class="l-cl l-cl-sm--10 l-cl-ds--5 l-mg-t--2 l-mg-t-md--4 l-mg-t-ds--0">
 								<div class="l-wrap">
 									<h2 class="o-h o-h__2 o-txt--white o-txt--ps-right">How to play?</h2><br />
@@ -124,22 +95,13 @@ get_header( 'front' );
 			</div><!-- /container -->
 		</div><!-- /page section -->
 
-		<!--ABOUT US PAGE SECTION:
-		* page section with white background and large padding
-		-->
+		<!--ABOUT US PAGE SECTION -->
 		<div class="o-pg-sec o-pg-sec--white o-pg-sec--pd-md">
 			<div class="l-container">
-				<!--
-				* flexbox row:
-				* on small screen displays column with reverse order,
-				* from desktop screen on displays ordered row
-				-->
+				<!-- flexbox row -->
 				<div class="l-row l-row-sm--col-r l-row-ds--row-o">
-					<!-- first column - text:
-					* flexbox column with verticaly centered content:
-					* on small screen is 100% width with centered text,
-					* from desktop screen is 50% width, with text positioned left
-					-->
+
+					<!-- first column -->
 					<div class="l-cl l-cl-sm--10 l-cl-ds--5 l-mg-t--2 l-mg-t-md--4 l-mg-t-ds--0">
 						<div class="l-wrap">
 							<h2 class="o-h o-h__2 o-txt--purple o-txt--ps-left">About us</h2><br />
@@ -148,13 +110,8 @@ get_header( 'front' );
 							<a class="o-a o-txt--green o-txt--ps-left" href="#"><i class="icon-arrow-right icon-sm"></i> Learn More</a>
 						</div>
 					</div>
-					<!-- second column - image:
-					* flexbox column with verticaly centered content:
-					* on small screen is 100% width with centered text,
-					* from desktop screen is 50% width
-					-->
+					<!-- second column -->
 					<div class="l-cl l-cl-sm--10 l-cl-ds--5">
-						<!-- about us section image -->
 						<div class="c-img-sec__img-wrap">
 							<img class="lazyload c-img-sec__img c-img-sec__img--char" data-src="<?php echo get_template_directory_uri() . '/assets/images/characters-small.png'; ?>"
 							data-srcset="<?php echo get_template_directory_uri() . '/assets/images/characters-small.png'; ?> 340w,
@@ -170,24 +127,18 @@ get_header( 'front' );
 			</div><!-- /container -->
 		</div><!-- /page section -->
 
-		<!--VIDEO PAGE SECTION:
-		* page section with purple background and small padding
-		-->
+		<!--VIDEO PAGE SECTION -->
 		<div class="o-pg-sec o-pg-sec--purple o-pg-sec--pd-sm">
 			<div class="l-container">
 				<div class="l-wrap">
-
 					<h2 class="o-h o-h__2 o-txt--white o-txt--center">Watch the video!</h2><br />
-
 					<!-- embeded video: must have container and wrap as it helps set the right height for the video -->
 					<div class="c-video__container">
 						<div class="c-video__wrap">
 							<iframe class="c-video__iframe" src="https://www.youtube.com/embed/dmo_u2zMd7o?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 						</div>
-					</div>
-
+					</div> <!-- /video container -->
 					<p class="o-h o-h__4 o-txt--orange-light o-txt--center">Share it with your Friends!</p>
-
 					<!-- share component -->
 					<div class="c-share">
 						<div class="c-share__icon-wrap">
@@ -196,27 +147,17 @@ get_header( 'front' );
 							<a id="mail" href="mailto:someone@example.com?Subject=https://www.youtube.com/watch?v=dmo_u2zMd7o" target="_blank"><i class="icon-email1 icon-17 c-share__icon"></i></a>
 						</div>
 					</div>
-
 				</div><!-- /wrap -->
 			</div><!-- /container -->
 		</div><!-- /page section -->
 
-		<!--WHATS IN THE BOX PAGE SECTION:
-		* page section with white background and small padding
-		-->
+		<!--WHATS IN THE BOX PAGE SECTION -->
 		<div class="o-pg-sec o-pg-sec--white o-pg-sec--pd-sm">
 			<div class="l-container">
-				<!--
-				* first flexbox row:
-				* on small screen displays ordered column,
-				* from desktop screen on displays ordered row
-				-->
+				<!-- first flex row -->
 				<div class="l-row l-row-sm--col-o l-row-ds--row-o">
-					<!-- first column - image:
-					* flexbox column with verticaly centered content:
-					* on small screen is 100%,
-					* from desktop screen is 50% width
-					-->
+
+					<!-- first column -->
 					<div class="l-cl l-cl-sm--10 l-cl-ds--5">
 						<!-- whats in the box page section image -->
 						<div class="c-img-sec__img-wrap c-img-sec__img-wrap--box c-img-sec__img-wrap--box-left">
@@ -229,12 +170,7 @@ get_header( 'front' );
 							sizes="(min-width: 740px) 60vw, (min-width: 500px) 70vw, 80vw" />
 						</div>
 					</div>
-
-					<!-- second column - text:
-					* flexbox column with verticaly centered content:
-					* on small screen is 100% with centered text,
-					* from desktop screen is 50% width with text align right
-					-->
+					<!-- second column -->
 					<div class="l-cl l-cl-sm--10 l-cl-ds--5 l-mg-t--2 l-mg-t-md--4 l-mg-t-ds--0">
 						<div class="l-wrap">
 							<h2 class="o-h o-h__2 o-txt--purple o-txt--ps-right">What's in the box?</h2><br />
@@ -245,15 +181,66 @@ get_header( 'front' );
 					</div>
 				</div><!-- /row -->
 
+				<!-- second flex row -->
+				<div class="l-row table">
+					<!-- first column -->
+					<div class="l-cl l-cl-sm--10 l-mg-t--2 l-mg-t-md--4 l-mg-t-ds--0">
+						<!-- adds top margin to this div -->
+						<div class="l-mg-t-ds--10 l-w--full">
+							<table class="c-table c-table--box">
+								<tr>
+									<th>Includes</th>
+									<th>Regular</th>
+									<th>Premium</th>
+								</tr>
+								<tr>
+									<td>Lorem ipsum dolor sit amet.</td>
+									<td><i class="icon-check icon-22"></i></td>
+									<td><i class="icon-check icon-22"></i></td>
+								</tr>
+								<tr>
+									<td>Dolor sit amet.</td>
+									<td><i class="icon-check icon-22"></i></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Consectetur.</td>
+									<td></td>
+									<td><i class="icon-check icon-22"></i></td>
+								</tr>
+								<tr>
+									<td>Lorem ipsum dolor sit amet.</td>
+									<td></td>
+									<td><i class="icon-check icon-22"></i></td>
+								</tr>
+								<tr>
+									<td>Dolor sit amet.</td>
+									<td><i class="icon-check icon-22"></i></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Consectetur.</td>
+									<td></td>
+									<td><i class="icon-check icon-22"></i></td>
+								</tr>
+							</table><!-- /box comparisone table -->
+
+							<table class="c-table c-table--price l-pd-t--2">
+								<tr>
+									<th></th>
+									<th>$ 16,90</th>
+									<th>$ 24,90</th>
+								</tr>
+							</table><!-- /price table -->
+						</div>
+					</div>
+				</div><!-- /row -->
+				
 			</div><!-- /container -->
 		</div><!-- /page section -->
 
-		<!--TESEMONIALS PAGE SECTION:
-		* page section with light purple background and small padding
-		-->
+		<!-- TESEMONIALS PAGE SECTION -->
 		<?php get_template_part( 'template-parts/testimonials' ); ?>
-
-	</div>
 
 <?php
 get_footer();

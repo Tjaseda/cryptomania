@@ -28,6 +28,10 @@
 .l-row {
   display: flex;
 
+  &--wrap {
+    flex-flow: row wrap;
+  }
+
   &-sm {
     &--col-o {
       flex-direction: column;
@@ -229,7 +233,7 @@
 
     &-lg--3 {
       @include breakpoint(desktopMd) {
-        width: 30%;
+        width: (100%/3);
       }
     }
   }
