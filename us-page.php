@@ -6,6 +6,11 @@
  */
 
 get_header();
+
+$about_us_title = get_field( 'about_us_title' );
+$about_us_subtitle = get_field( 'about_us_subtitle' );
+$about_us_content = get_field( 'about_us_content' );
+
 ?>
 
 <div class="o-pg-sec o-pg-sec--white o-pg-sec--pd-sm">
@@ -27,9 +32,15 @@ get_header();
       <!-- first column -->
       <div class="l-cl l-cl-sm--10 l-cl-ds--6">
           <div class="l-wrap"> <!-- takes care of padding on small screen - content does not touch the screen -->
-            <h2 class="o-h o-h__2 o-txt--purple o-txt--ps-left">Get to know the team</h2><br />
-            <p class="o-s o-s__1 o-txt--gray o-txt--ps-t-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat tristique velit eu commodo. Suspendisse condimentum quis nisi vel tristique. Aenean mollis, tortor eu aliquet maximus, felis velit ullamcorper nunc, id consectetur augue dui sed ligula. Aenean ut commodo metus, vitae lobortis quam.
-              <br /><br />Praesent pharetra urna ligula. Aenean et tincidunt ipsum, sed porta justo. Mauris ac tortor nec erat efficitur iaculis. Fusce ligula ligula, sollicitudin at arcu non, feugiat pellentesque risus. Ut hendrerit ligula ac ligula suscipit fermentum. Duis laoreet iaculis congue. Vivamus blandit lorem sed scelerisque hendrerit. Pellentesque hendrerit nulla malesuada, vestibulum nisi non, tempor turpis.</p><br />
+            <?php if( $about_us_title ): ?>
+              <h2 class="o-h o-h__2 o-txt--purple o-txt--ps-left"><?php echo $about_us_title ?></h2><br />
+            <?php endif; ?>
+            <?php if( $about_us_subtitle ): ?>
+              <p class="o-s o-s__2 o-txt--orange-dark o-txt--ps-left"><?php echo $about_us_subtitle ?></p><br />
+            <?php endif; ?>
+            <?php if( $about_us_content ): ?>
+              <p class="o-s o-s__1 o-txt--gray o-txt--ps-t-left"><?php echo $about_us_content ?></p><br />
+            <?php endif; ?>
           </div>
       </div>
       <!-- second column -->

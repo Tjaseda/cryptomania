@@ -187,10 +187,17 @@ add_image_size( 'testimonial_img', 300, 300, true );
 add_image_size( 'testimonial_img@2x', 600, 600, true );
 add_image_size( 'testimonial_img@3x', 900, 900, true );
 
+add_image_size( 'pgsec_img', 300, 300, false );
+add_image_size( 'pgsec_img@2x', 600, 600, false );
+add_image_size( 'pgsec_img@3x', 900, 900, false );
+add_image_size( 'pgsec_img@4x', 1200, 1200, false );
+
 /* Setting sizes attribute for testemonial images */
 function cryptomania_testimonials_sizes_attr( $attr, $attachment, $size ) {
 	if ( $size === 'testimonial_img' ) {
 		$attr['sizes'] = '(min-width: 1200) 300px, (min-width: 970) 30vw, (min-width: 850) 40vw, (min-width: 740px) 26vw, (min-width: 500px) 28vw, 55vw';
+	} else if ( $size === 'pgsec_img' ) {
+		$attr['sizes'] = '(min-width: 1200px) 400px, (min-width: 970px) 32vw, (min-width: 740px) 56vw, (min-width: 500px) 67vw, 90vw';
 	}
 	return$attr;
 }

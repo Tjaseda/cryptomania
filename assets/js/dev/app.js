@@ -3,10 +3,12 @@ import Popup from './modules/share-popup';
 import MobileMenu from './modules/mobile-menu';
 import DropLang from './modules/drop-lang'
 
-if(window.location.pathname === "/" || window.location.pathname === "/sl/") {
-  var slider = new Slider();
-  var popup = new Popup();
-}
 
+
+var popup = new Popup();
 var mobileMenu = new MobileMenu();
 var dropLang = new DropLang();
+
+if ( document.getElementById('slider') ) {
+  var slider = new Slider();
+}

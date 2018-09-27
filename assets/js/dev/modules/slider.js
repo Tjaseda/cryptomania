@@ -1,14 +1,15 @@
 class Slider {
   constructor() {
     this.slider = document.getElementById("slider");
-    this.sliderWidth = this.slider.offsetWidth;
-    this.width = this.sliderWidth + 'px';
-    this.slideList = document.getElementById("sliderWrap");
+    this.sliderWidth;
+    this.width;
+    this.slideList;
     this.count = 1;
-    this.items = this.slideList.querySelectorAll("#slide").length;
-    this.slides = this.slideList.querySelectorAll("#slide");
-    this.prev = document.getElementById("prev");
-    this.next = document.getElementById("next");
+    this.items;
+    this.slides;
+    this.prev;
+    this.next;
+    this.setvar();
     this.setSlidesWidth();
     this.moveSlides();
     this.events();
@@ -22,6 +23,18 @@ class Slider {
     this.next.addEventListener('click', this.nextSlide.bind(this));
     this.prev.addEventListener('click', this.prevDef.bind(this));
     this.prev.addEventListener('click', this.prevSlide.bind(this));
+  }
+
+  setvar() {
+    if( this.slider ) {
+      this.sliderWidth = this.slider.offsetWidth;
+      this.width = this.sliderWidth + 'px';
+      this.slideList = document.getElementById("sliderWrap");
+      this.items = this.slideList.querySelectorAll("#slide").length;
+      this.slides = this.slideList.querySelectorAll("#slide");
+      this.prev = document.getElementById("prev");
+      this.next = document.getElementById("next");
+    }
   }
 
   prevDef(e) {

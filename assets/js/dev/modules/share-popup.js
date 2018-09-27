@@ -1,6 +1,6 @@
 class Popup {
   constructor() {
-    this.shareButton = document.querySelectorAll("#share");
+    this.shareButton = document.querySelectorAll('#share');
     this.events();
   }
 
@@ -12,6 +12,7 @@ class Popup {
 
   log(e) {
     e.preventDefault();
+
     var element = e.target;
     var parent = element.parentNode;
     var link = parent.getAttribute("href");
