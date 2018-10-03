@@ -25,7 +25,6 @@ Main city background - on front page hero, in footer (coming soon) and in page h
   }
 
   &--md {
-    height: 400px;
 
     @include breakpoint(mediumLarge) {
       height: 500px;

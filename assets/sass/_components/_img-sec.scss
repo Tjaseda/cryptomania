@@ -31,15 +31,15 @@
       width: 90%;
 
       @include breakpoint(small) {
-        width: 70%;
+        width: 60%;
       }
 
       @include breakpoint(desktop) {
-        width: 80%;
+        width: 70%;
       }
 
-      @include breakpoint(large) {
-        width: 70%;
+      @include breakpoint(desktopLarge) {
+        width: 60%;
       }
 
       &-top {

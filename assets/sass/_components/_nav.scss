@@ -285,7 +285,7 @@
       }
 
       @include breakpoint(mediumLarge) {
-        position: unset;
+        position: relative;
         width: 59%;
         display: flex;
         margin: 0;

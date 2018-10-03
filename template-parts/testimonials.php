@@ -32,7 +32,7 @@
           ?>
 
             <div id="slide" class="l-row l-row-sm--col-o l-row-md--row-o c-slider__slide">
-              <div class="l-cl l-cl-sm--10 l-cl-md--5">
+              <div class="l-cl l-cl-ds-lg--right l-cl-sm--10 l-cl-md--5">
                 <?php the_post_thumbnail( 'testimonial_img', array( 'class' => 'lazyload c-slider__image', 'alt' => $title, 'title' => $title ) )?>
               </div>
               <div class="l-cl l-cl-sm--10 l-cl-md--5">

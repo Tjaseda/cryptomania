@@ -11,6 +11,10 @@ $about_us_title = get_field( 'about_us_title' );
 $about_us_subtitle = get_field( 'about_us_subtitle' );
 $about_us_content = get_field( 'about_us_content' );
 
+$companyName = get_option( 'company_name' );
+$companyAddress = get_option( 'company_address' );
+$companyPhone = get_option( 'company_phone' );
+$companyEmail = get_option( 'company_email' );
 ?>
 
 <div class="o-pg-sec o-pg-sec--white o-pg-sec--pd-sm">
@@ -41,6 +45,28 @@ $about_us_content = get_field( 'about_us_content' );
             <?php if( $about_us_content ): ?>
               <p class="o-s o-s__1 o-txt--gray o-txt--ps-t-left"><?php echo $about_us_content ?></p><br />
             <?php endif; ?>
+
+            <div class="c-contact">
+              <h3 class="o-s o-s__2 o-txt--purple">Contact Us</h3><br />
+              <div class="c-contact__info">
+                <?php if( $companyName ) : ?>
+                  <p class="o-s o-s__1 o-txt--gray"><b><?php echo $companyName; ?></b></p>
+                <?php endif; ?>
+                <div>
+                  <?php if( $companyEmail ) : ?>
+                    <div class="c-contact__info-item"><i class="icon-email1 icon-sm icon-purple"></i>  <span class="o-s o-s__1 o-txt--gray c-contact__info-text"><?php echo $companyEmail; ?></span></div>
+                  <?php endif; ?>
+                  <?php if( $companyPhone ) : ?>
+                    <div class="c-contact__info-item"><i class="icon-phone icon-18 icon-purple"></i>  <span class="o-s o-s__1 o-txt--gray c-contact__info-text"><?php echo $companyPhone; ?></span></div>
+                  <?php endif; ?>
+                </div>
+              </div>
+              <?php if( $companyAddress ) : ?>
+              <div class="c-contact__info c-contact__info--two">
+                <p class="o-s o-s__1 o-txt--gray"><?php echo $companyAddress; ?></p>
+              </div>
+            <?php endif; ?>
+            </div>
           </div>
       </div>
       <!-- second column -->

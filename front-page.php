@@ -27,6 +27,7 @@ $front_section_3_link = get_field( 'front_section_3_link' );
 
 $front_section_4_title = get_field( 'front_section_4_title' );
 $front_section_4_embed_link = get_field( 'front_section_4_embed_link' );
+$front_section_4_description_text = get_field( 'front_section_4_description_text' );
 $front_section_4_text = get_field( 'front_section_4_text' );
 $front_section_4_share_link = get_field( 'front_section_4_share_link' );
 
@@ -195,6 +196,9 @@ $front_section_5_link = get_field( 'front_section_5_link' );
 							</div>
 						</div> <!-- /video container -->
 					<?php endif; ?>
+					<?php if( $front_section_4_description_text ) : ?>
+						<p class="c-video__desc o-s__1 o-txt--white-tr o-txt--center l-mg-b--4"><?php echo $front_section_4_description_text; ?></p>
+					<?php endif; ?>
 					<?php if( $front_section_4_text ): ?>
 						<p class="o-h o-h__4 o-txt--orange-light o-txt--center"><?php echo $front_section_4_text ?></p>
 					<?php endif; ?>
@@ -203,7 +207,7 @@ $front_section_5_link = get_field( 'front_section_5_link' );
 						<div class="c-share__icon-wrap">
 							<a id="share" href="https://twitter.com/intent/tweet?text=<?php echo $front_section_4_share_link ?>" target="_blank"><i class="icon-Icon_Twitter_blank icon-20 c-share__icon c-share__icon--twitter"></i></a>
 							<a id="share" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $front_section_4_share_link ?>" target="_blank"><i class="icon-Icon_Facebook_blank icon-20 c-share__icon c-share__icon--facebook"></i></a>
-							<a id="mail" href="mailto:?Subject=<?php echo $front_section_4_share_link ?>" target="_blank"><i class="icon-email1 icon-17 c-share__icon"></i></a>
+							<a id="mail" href="mailto:?Subject=<?php echo $front_section_4_share_link ?>" target="_blank"><i class="icon-email1 icon-17 icon-white c-share__icon"></i></a>
 						</div>
 					</div>
 				</div><!-- /wrap -->

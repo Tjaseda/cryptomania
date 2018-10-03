@@ -9,14 +9,14 @@ background (city) is styled in _bg-city.scss
   &__content {
     width: 100%;
     z-index: 4;
-    margin: 60px auto 0 auto;
+    margin: 40px auto 40px auto;
 
     @include breakpoint(medium) {
-      margin: 120px auto 90px auto;
+      margin: 30px auto 100px auto;
     }
 
     @include breakpoint(large) {
-      margin: 90px auto 150px auto;
+      margin: 30px auto 170px auto;
     }
   }
 
@@ -37,7 +37,7 @@ background (city) is styled in _bg-city.scss
 
     @include breakpoint(desktop) {
       width: 40%;
-      padding: 0 0 $offset30 0;
+      padding: 0 0 $offset50 0;
     }
 
     @include breakpoint(desktopLarge) {

@@ -7,6 +7,9 @@
  * @package Cryptomania
  */
 
+// include custom submenu item for Cryptomania theme settings
+require get_template_directory() . '/inc/function-admin.php';
+
 if ( ! function_exists( 'cryptomania_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -237,6 +240,9 @@ Icons config
 */
 function cryptomania_my_header_elements() { ?>
 <ul class="social">
+	<li><a href="#"><span class="icon-phone"></span></a></li>
+	<li><a href="#"><span class="icon-instagram"></span></a></li>
+	<li><a href="#"><span class="icon-youtube"></span></a></li>
 	<li><a href="#"><span class="icon-arrow-down"></span></a></li>
 	<li><a href="#"><span class="icon-arrow-left"></span></a></li>
 	<li><a href="#"><span class="icon-arrow-right"></span></a></li>

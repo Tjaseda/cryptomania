@@ -1,6 +1,6 @@
 class DropLang {
   constructor() {
-    this.showButton = document.getElementsByClassName('icon-arrow-down')[0];
+    this.showButton = document.getElementsByClassName('dropdown')[0];
     this.content = document.getElementsByClassName('dropdown-content')[0];
     this.events();
   }
