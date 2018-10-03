@@ -20,6 +20,10 @@ function cryptomania_admin_menu() {
     register_setting( 'cryptomania_options', 'footer_form_title' );
     register_setting( 'cryptomania_options', 'footer_copyright' );
     register_setting( 'cryptomania_options', 'footer_logo_link' );
+    register_setting( 'cryptomania_options', '404_title' );
+    register_setting( 'cryptomania_options', '404_button_link' );
+    register_setting( 'cryptomania_options', '404_button_title' );
+    register_setting( 'cryptomania_options', '404_button_text' );
     register_setting( 'cryptomania_options', 'next_link_text' );
     register_setting( 'cryptomania_options', 'previous_link_text' );
     // Form
@@ -49,6 +53,7 @@ function cryptomania_admin_menu() {
     // General
     add_settings_section( 'cryptomania-header-options', '', 'cryptomania_header_options', 'cryptomania_options' );
     add_settings_section( 'cryptomania-footer-options', '', 'cryptomania_footer_options', 'cryptomania_options' );
+    add_settings_section( 'cryptomania-404-options', '', 'cryptomania_404_options', 'cryptomania_options' );
     add_settings_section( 'cryptomania-other-options', '', 'cryptomania_other_options', 'cryptomania_options' );
     // Form
     add_settings_section( 'cryptomania-configuration-options', '', 'cryptomania_configuration_options', 'cryptomania_options_form' );
@@ -63,6 +68,10 @@ function cryptomania_admin_menu() {
     add_settings_field( 'footer_form_title', 'Footer Form Title', 'cryptomania_footer_form_title', 'cryptomania_options', 'cryptomania-footer-options' );
     add_settings_field( 'footer_copyright', 'Footer Text', 'cryptomania_footer_text', 'cryptomania_options', 'cryptomania-footer-options' );
     add_settings_field( 'footer_logo_link', 'Footer Logo Link', 'cryptomania_footer_logo_link', 'cryptomania_options', 'cryptomania-footer-options' );
+    add_settings_field( '404_title', '404 Site Title', 'cryptomania_404_title', 'cryptomania_options', 'cryptomania-404-options' );
+    add_settings_field( '404_button_link', '404 Button Link', 'cryptomania_404_button_link', 'cryptomania_options', 'cryptomania-404-options' );
+    add_settings_field( '404_button_title', '404 Button Title', 'cryptomania_404_button_title', 'cryptomania_options', 'cryptomania-404-options' );
+    add_settings_field( '404_button_text', '404 Button Text', 'cryptomania_404_button_text', 'cryptomania_options', 'cryptomania-404-options' );
     add_settings_field( 'next_link_text', 'Next Link Text', 'cryptomania_next_text', 'cryptomania_options', 'cryptomania-other-options' );
     add_settings_field( 'previous_link_text', 'Previous Link Text', 'cryptomania_prev_text', 'cryptomania_options', 'cryptomania-other-options' );
     // Form
@@ -223,6 +232,26 @@ function cryptomania_next_text() {
   echo '<input id="next_link_text" class="regular-text" type="text" name="next_link_text" value="'.$nextText.'" />';
 }
 
+function cryptomania_404_button_text() {
+  $fofBtnText = html_entity_decode( esc_attr( get_option( '404_button_text' ) ) );
+  echo '<input id="404_button_text" class="regular-text" type="text" name="404_button_text" value="'.$fofBtnText.'" />';
+}
+
+function cryptomania_404_button_title() {
+  $fofBtnTitle = html_entity_decode( esc_attr( get_option( '404_button_title' ) ) );
+  echo '<input id="404_button_title" class="regular-text" type="text" name="404_button_title" value="'.$fofBtnTitle.'" />';
+}
+
+function cryptomania_404_button_link() {
+  $fofBtnLink = html_entity_decode( esc_attr( get_option( '404_button_link' ) ) );
+  echo '<input id="404_button_link" class="regular-text" type="url" name="404_button_link" value="'.$fofBtnLink.'" placeholder="https://..." />';
+}
+
+function cryptomania_404_title() {
+  $fofTitle = html_entity_decode( esc_attr( get_option( '404_title' ) ) );
+  echo '<input id="404_title" class="regular-text" type="text" name="404_title" value="'.$fofTitle.'" />';
+}
+
 function cryptomania_footer_logo_link() {
   $footerLogoLink = html_entity_decode( esc_attr( get_option( 'footer_logo_link' ) ) );
   echo '<input id="footer_logo_link" class="regular-text" type="url" name="footer_logo_link" value="'.$footerLogoLink.'" placeholder="https://..." />';
@@ -282,6 +311,10 @@ function cryptomania_configuration_options() {
 
 function cryptomania_other_options() {
   echo '<br /><br /><hr /><h2 class="title"><span class="dashicons dashicons-admin-generic"></span> OTHER OPTIONS</h2><hr />';
+}
+
+function cryptomania_404_options() {
+  echo '<br /><br /><hr /><h2 class="title"><span class="dashicons dashicons-admin-generic"></span> 404 OPTIONS</h2><hr />';
 }
 
 function cryptomania_footer_options() {
