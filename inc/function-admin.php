@@ -14,6 +14,7 @@ function cryptomania_admin_menu() {
     add_submenu_page( 'cryptomania_options', 'General Theme Options', 'General', 'manage_network_options', 'cryptomania_options', 'cryptomania_theme_create_page' );
     add_submenu_page( 'cryptomania_options', 'Cryptomania Form Options', 'Form', 'manage_network_options', 'cryptomania_options_form', 'cryptomania_theme_form_settings' );
     add_submenu_page( 'cryptomania_options', 'Cryptomania Social Options', 'Social', 'manage_network_options', 'cryptomania_options_social', 'cryptomania_theme_social_settings' );
+    add_submenu_page( 'cryptomania_options', 'Cryptomania Analytic Options', 'Google Analytic', 'manage_network_options', 'cryptomania_options_analytic', 'cryptomania_theme_analytic_settings' );
 
     // General
     register_setting( 'cryptomania_options', 'header_subtitle' );
@@ -48,6 +49,8 @@ function cryptomania_admin_menu() {
     register_setting( 'cryptomania_options_social', 'company_facebook' );
     register_setting( 'cryptomania_options_social', 'company_instagram' );
     register_setting( 'cryptomania_options_social', 'company_youtube' );
+    //Analytic
+    register_setting( 'cryptomania_options_analytic', 'analytic_code' );
 
 
     // General
@@ -61,6 +64,8 @@ function cryptomania_admin_menu() {
     // Social
     add_settings_section( 'cryptomania-social-contact-options', '', 'cryptomania_social_contact_options', 'cryptomania_options_social' );
     add_settings_section( 'cryptomania-social-media-options', '', 'cryptomania_social_media_options', 'cryptomania_options_social' );
+    //Analytic
+    add_settings_section( 'cryptomania-analytic-options', '', 'cryptomania_analytic_options', 'cryptomania_options_analytic' );
 
 
     // General
@@ -96,6 +101,8 @@ function cryptomania_admin_menu() {
     add_settings_field( 'company_facebook', 'Facebook', 'cryptomania_company_facebook', 'cryptomania_options_social', 'cryptomania-social-media-options' );
     add_settings_field( 'company_instagram', 'Instagram', 'cryptomania_company_instagram', 'cryptomania_options_social', 'cryptomania-social-media-options' );
     add_settings_field( 'company_youtube', 'YouTube', 'cryptomania_company_youtube', 'cryptomania_options_social', 'cryptomania-social-media-options' );
+    //Analytic
+    add_settings_field( 'analytic_code', 'Google Analytics Code', 'cryptomania_analytic_code', 'cryptomania_options_analytic', 'cryptomania-analytic-options' );
 
 }
 
@@ -107,6 +114,15 @@ add_action('admin_menu', 'cryptomania_admin_menu');
 *                                    FIELDS DISPLAY FUNCTIONS
 *===================================================================================================================
 */
+/*
+*========================
+    ANALYTIC
+*========================
+*/
+function cryptomania_analytic_code() {
+  $analyticCode = html_entity_decode( esc_attr( get_option( 'analytic_code' ) ) );
+  echo '<textarea type="textares" rows="7" cols="50" id="analytic_code" name="analytic_code">'.$analyticCode.'</textarea>';
+}
 /*
 *========================
     SOCIAL FIELDS
@@ -279,6 +295,14 @@ function cryptomania_header_subtitle() {
 */
 /*
 *========================
+    ANALYTIC
+*========================
+*/
+function cryptomania_analytic_options() {
+  echo '<br /><br /><hr /><h2 class="title"><span class="dashicons dashicons-admin-generic"></span> GOOGLE ANALYTIC OPTIONS</h2><hr />';
+}
+/*
+*========================
     SOCIAL OPTIONS
 *========================
 */
@@ -330,6 +354,9 @@ function cryptomania_header_options() {
 *                                    SUBPAGES DISPLAY FUNCTIONS
 *===================================================================================================================
 */
+function cryptomania_theme_analytic_settings() {
+  require_once( get_template_directory() . '/inc/templates/cryptomania-anal-seo.php' );
+}
 
 function cryptomania_theme_social_settings() {
   require_once( get_template_directory() . '/inc/templates/cryptomania-social.php' );
