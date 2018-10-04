@@ -15,6 +15,7 @@ function cryptomania_admin_menu() {
     add_submenu_page( 'cryptomania_options', 'Cryptomania Form Options', 'Form', 'manage_network_options', 'cryptomania_options_form', 'cryptomania_theme_form_settings' );
     add_submenu_page( 'cryptomania_options', 'Cryptomania Social Options', 'Social', 'manage_network_options', 'cryptomania_options_social', 'cryptomania_theme_social_settings' );
     add_submenu_page( 'cryptomania_options', 'Cryptomania Analytic Options', 'Google Analytic', 'manage_network_options', 'cryptomania_options_analytic', 'cryptomania_theme_analytic_settings' );
+    add_submenu_page( 'cryptomania_options', 'Cryptomania Meta Tags', 'Meta Tags', 'manage_network_options', 'cryptomania_options_meta', 'cryptomania_theme_meta_settings' );
 
     // General
     register_setting( 'cryptomania_options', 'header_subtitle' );
@@ -51,6 +52,8 @@ function cryptomania_admin_menu() {
     register_setting( 'cryptomania_options_social', 'company_youtube' );
     //Analytic
     register_setting( 'cryptomania_options_analytic', 'analytic_code' );
+    //Meta
+    register_setting( 'cryptomania_options_meta', 'meta_code' );
 
 
     // General
@@ -66,6 +69,8 @@ function cryptomania_admin_menu() {
     add_settings_section( 'cryptomania-social-media-options', '', 'cryptomania_social_media_options', 'cryptomania_options_social' );
     //Analytic
     add_settings_section( 'cryptomania-analytic-options', '', 'cryptomania_analytic_options', 'cryptomania_options_analytic' );
+    //Meta
+    add_settings_section( 'cryptomania-meta-options', '', 'cryptomania_meta_options', 'cryptomania_options_meta' );
 
 
     // General
@@ -103,6 +108,9 @@ function cryptomania_admin_menu() {
     add_settings_field( 'company_youtube', 'YouTube', 'cryptomania_company_youtube', 'cryptomania_options_social', 'cryptomania-social-media-options' );
     //Analytic
     add_settings_field( 'analytic_code', 'Google Analytics Code', 'cryptomania_analytic_code', 'cryptomania_options_analytic', 'cryptomania-analytic-options' );
+    //Meta
+    add_settings_field( 'meta_code', 'Head Meta Code', 'cryptomania_meta_code', 'cryptomania_options_meta', 'cryptomania-meta-options' );
+
 
 }
 
@@ -116,12 +124,21 @@ add_action('admin_menu', 'cryptomania_admin_menu');
 */
 /*
 *========================
+    META
+*========================
+*/
+function cryptomania_meta_code() {
+  $metaCode = html_entity_decode( esc_attr( get_option( 'meta_code' ) ) );
+  echo '<textarea type="textares" rows="7" cols="70" id="meta_code" name="meta_code">'.$metaCode.'</textarea>';
+}
+/*
+*========================
     ANALYTIC
 *========================
 */
 function cryptomania_analytic_code() {
   $analyticCode = html_entity_decode( esc_attr( get_option( 'analytic_code' ) ) );
-  echo '<textarea type="textares" rows="7" cols="50" id="analytic_code" name="analytic_code">'.$analyticCode.'</textarea>';
+  echo '<textarea type="textares" rows="7" cols="70" id="analytic_code" name="analytic_code">'.$analyticCode.'</textarea>';
 }
 /*
 *========================
@@ -293,6 +310,15 @@ function cryptomania_header_subtitle() {
 *                                    SECTIONS (OPTIONS) DISPLAY FUNCTIONS
 *===================================================================================================================
 */
+
+/*
+*========================
+    META
+*========================
+*/
+function cryptomania_meta_options() {
+  echo '<br /><br /><hr /><h2 class="title"><span class="dashicons dashicons-admin-generic"></span> META OPTIONS</h2><hr />';
+}
 /*
 *========================
     ANALYTIC
@@ -354,6 +380,9 @@ function cryptomania_header_options() {
 *                                    SUBPAGES DISPLAY FUNCTIONS
 *===================================================================================================================
 */
+function cryptomania_theme_meta_settings() {
+  require_once( get_template_directory() . '/inc/templates/cryptomania-meta.php' );
+}
 function cryptomania_theme_analytic_settings() {
   require_once( get_template_directory() . '/inc/templates/cryptomania-anal-seo.php' );
 }

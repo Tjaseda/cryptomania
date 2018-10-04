@@ -10,6 +10,7 @@
  */
 
 $analyticCode = get_option( 'analytic_code' );
+$metaCode = get_option( 'meta_code' );
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -20,6 +21,7 @@ $analyticCode = get_option( 'analytic_code' );
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+	<?php echo $metaCode; ?>
 	<?php echo $analyticCode; ?>
 </head>
 

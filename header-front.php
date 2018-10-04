@@ -9,6 +9,7 @@
  * @package Cryptomania
  */
 $analyticCode = get_option( 'analytic_code' );
+$metaCode = get_option( 'meta_code' );
 
 $header_subtitle = get_option( 'header_subtitle' );
 
@@ -36,6 +37,7 @@ $checkboxMarketingText = get_option( 'checkbox_marketing_text' );
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+	<?php echo $metaCode; ?>
 	<?php echo $analyticCode; ?>
 </head>
 

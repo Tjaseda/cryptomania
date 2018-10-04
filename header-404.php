@@ -9,6 +9,7 @@
  * @package Cryptomania
  */
 $analyticCode = get_option( 'analytic_code' );
+$metaCode = get_option( 'meta_code' );
 
 $fofTitle = get_option( '404_title' );
 $fofBtnLink = get_option( '404_button_link' );
@@ -24,6 +25,7 @@ $fofBtnText = get_option( '404_button_text' );
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+	<?php echo $metaCode; ?>
 	<?php echo $analyticCode; ?>
 </head>
 
