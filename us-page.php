@@ -10,6 +10,7 @@ get_header();
 $about_us_title = get_field( 'about_us_title' );
 $about_us_subtitle = get_field( 'about_us_subtitle' );
 $about_us_content = get_field( 'about_us_content' );
+$about_us_contact_title = get_field( 'about_us_contact_title' );
 
 $companyName = get_option( 'company_name' );
 $companyAddress = get_option( 'company_address' );
@@ -47,7 +48,9 @@ $companyEmail = get_option( 'company_email' );
             <?php endif; ?>
 
             <div class="c-contact">
-              <h3 class="o-s o-s__2 o-txt--purple">Contact Us</h3><br />
+              <?php if( $about_us_contact_title ) : ?>
+                <h3 class="o-s o-s__2 o-txt--purple">Contact Us</h3><br />
+              <?php endif; ?>
               <div class="c-contact__info">
                 <?php if( $companyName ) : ?>
                   <p class="o-s o-s__1 o-txt--gray"><b><?php echo $companyName; ?></b></p>
@@ -66,6 +69,7 @@ $companyEmail = get_option( 'company_email' );
                 <p class="o-s o-s__1 o-txt--gray"><?php echo $companyAddress; ?></p>
               </div>
             <?php endif; ?>
+            
             </div>
           </div>
       </div>
