@@ -49,7 +49,7 @@ $companyEmail = get_option( 'company_email' );
 
             <div class="c-contact">
               <?php if( $about_us_contact_title ) : ?>
-                <h3 class="o-s o-s__2 o-txt--purple">Contact Us</h3><br />
+                <h3 class="o-s o-s__2 o-txt--purple"><?php echo $about_us_contact_title; ?></h3><br />
               <?php endif; ?>
               <div class="c-contact__info">
                 <?php if( $companyName ) : ?>
@@ -69,7 +69,7 @@ $companyEmail = get_option( 'company_email' );
                 <p class="o-s o-s__1 o-txt--gray"><?php echo $companyAddress; ?></p>
               </div>
             <?php endif; ?>
-            
+
             </div>
           </div>
       </div>
