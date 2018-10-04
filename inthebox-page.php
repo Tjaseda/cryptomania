@@ -65,6 +65,18 @@ $inthebox_section_11_subtitle = get_field( 'inthebox_section_11_subtitle' );
 $inthebox_section_11_content = get_field( 'inthebox_section_11_content' );
 $inthebox_section_11_image = get_field( 'inthebox_section_11_image' );
 
+$inthebox_section_12_add = get_field( 'inthebox_section_12_add' );
+$inthebox_section_12_title = get_field( 'inthebox_section_12_title' );
+$inthebox_section_12_subtitle = get_field( 'inthebox_section_12_subtitle' );
+$inthebox_section_12_content = get_field( 'inthebox_section_12_content' );
+$inthebox_section_12_image = get_field( 'inthebox_section_12_image' );
+
+$inthebox_section_13_add = get_field( 'inthebox_section_13_add' );
+$inthebox_section_13_title = get_field( 'inthebox_section_13_title' );
+$inthebox_section_13_subtitle = get_field( 'inthebox_section_13_subtitle' );
+$inthebox_section_13_content = get_field( 'inthebox_section_13_content' );
+$inthebox_section_13_image = get_field( 'inthebox_section_13_image' );
+
 ?>
 
 <div class="o-pg-sec o-pg-sec--white o-pg-sec--pd-lg">
@@ -474,7 +486,7 @@ $inthebox_section_11_image = get_field( 'inthebox_section_11_image' );
                   <h2 class="o-h o-h__2 o-txt--white o-txt--ps-right"><?php echo $inthebox_section_10_title ?></h2><br />
                 <?php endif; ?>
                 <?php if( $inthebox_section_10_subtitle ): ?>
-                  <p class="o-s o-s__2 o-txt--orange-light o-txt--ps-right"><?php echo $inthebox_section_8_subtitle ?></p><br />
+                  <p class="o-s o-s__2 o-txt--orange-light o-txt--ps-right"><?php echo $inthebox_section_10_subtitle ?></p><br />
                 <?php endif; ?>
                 <?php if( $inthebox_section_10_content ): ?>
                   <p class="o-s o-s__1 o-txt--white-tr o-txt--ps-t-right"><?php echo $inthebox_section_10_content ?></p><br />
@@ -517,6 +529,88 @@ $inthebox_section_11_image = get_field( 'inthebox_section_11_image' );
               <?php echo $inthebox_section_11_image['sizes']['pgsec_img@2x']; ?> 600w,
               <?php echo $inthebox_section_11_image['sizes']['pgsec_img@3x']; ?> 900w,
               <?php echo $inthebox_section_11_image['sizes']['pgsec_img@4x']; ?> 1200w"
+              sizes="(min-width: 1200px) 400px, (min-width: 970px) 32vw, (min-width: 740px) 56vw, (min-width: 500px) 67vw, 90vw" />
+
+            <?php endif; ?>
+          </div>
+        </div>
+
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /page section -->
+<?php endif; ?>
+
+<?php if( $inthebox_section_12_add === 'yes' ): ?>
+  <div class="o-pg-sec o-pg-sec--purple o-pg-sec--pd-md">
+    <div class="l-container">
+      <!-- flexbox row -->
+      <div class="l-row l-row-sm--col-o l-row-ds--row-o">
+        <!-- first column -->
+          <div class="l-cl l-cl-sm--10 l-cl-ds--5 l-pos--rel">
+            <!-- image of how to play page section that is always displayed-->
+            <div class="c-img-sec__img-wrap">
+              <?php if( $inthebox_section_12_image ): ?>
+
+                <img class="lazyload c-img-sec__img c-img-sec__img--char c-img-sec__img--char--left" title="<?php echo $inthebox_section_12_title ?>" alt="<?php echo $inthebox_section_12_title ?>" data-src="<?php echo $inthebox_section_12_image['sizes']['pgsec_img']; ?>"
+                data-srcset="<?php echo $inthebox_section_12_image['sizes']['pgsec_img']; ?> 300w,
+                <?php echo $inthebox_section_12_image['sizes']['pgsec_img@2x']; ?> 600w,
+                <?php echo $inthebox_section_12_image['sizes']['pgsec_img@3x']; ?> 900w,
+                <?php echo $inthebox_section_12_image['sizes']['pgsec_img@4x']; ?> 1200w"
+                sizes="(min-width: 1200px) 400px, (min-width: 970px) 32vw, (min-width: 740px) 56vw, (min-width: 500px) 67vw, 90vw" />
+
+              <?php endif; ?>
+            </div>
+          </div>
+          <!-- second column -->
+          <div class="l-cl l-cl-sm--10 l-cl-ds--5 l-mg-t--2 l-mg-t-md--4 l-mg-t-ds--0">
+              <div class="l-wrap">
+                <?php if( $inthebox_section_12_title ): ?>
+                  <h2 class="o-h o-h__2 o-txt--white o-txt--ps-right"><?php echo $inthebox_section_12_title ?></h2><br />
+                <?php endif; ?>
+                <?php if( $inthebox_section_12_subtitle ): ?>
+                  <p class="o-s o-s__2 o-txt--orange-light o-txt--ps-right"><?php echo $inthebox_section_12_subtitle ?></p><br />
+                <?php endif; ?>
+                <?php if( $inthebox_section_12_content ): ?>
+                  <p class="o-s o-s__1 o-txt--white-tr o-txt--ps-t-right"><?php echo $inthebox_section_12_content ?></p><br />
+                <?php endif; ?>
+              </div>
+          </div>
+
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /page section -->
+<?php endif; ?>
+
+<?php if( $inthebox_section_13_add === 'yes' ): ?>
+  <div class="o-pg-sec o-pg-sec--white o-pg-sec--pd-md">
+    <div class="l-container">
+      <!-- flexbox row -->
+      <div class="l-row l-row-sm--col-r l-row-ds--row-o">
+        <!-- first column -->
+        <div class="l-cl l-cl-sm--10 l-cl-ds--5 l-mg-t--2 l-mg-t-md--4 l-mg-t-ds--0">
+          <div class="l-wrap">
+            <?php if( $inthebox_section_13_title ): ?>
+              <h2 class="o-h o-h__2 o-txt--purple o-txt--ps-left"><?php echo $inthebox_section_13_title ?></h2><br />
+            <?php endif; ?>
+            <?php if( $inthebox_section_13_subtitle ): ?>
+              <p class="o-s o-s__2 o-txt--orange-dark o-txt--ps-left"><?php echo $inthebox_section_13_subtitle ?></p><br />
+            <?php endif; ?>
+            <?php if( $inthebox_section_13_content ): ?>
+              <p class="o-s o-s__1 o-txt--gray o-txt--ps-t-left"><?php echo $inthebox_section_13_content ?></p><br />
+            <?php endif; ?>
+          </div>
+        </div>
+        <!-- second column -->
+        <div class="l-cl l-cl-sm--10 l-cl-ds--5">
+          <!-- about us section image -->
+          <div class="c-img-sec__img-wrap">
+            <?php if( $inthebox_section_13_image ): ?>
+
+              <img class="lazyload c-img-sec__img c-img-sec__img--char c-img-sec__img--char--right" title="<?php echo $inthebox_section_13_title ?>" alt="<?php echo $inthebox_section_13_title ?>" data-src="<?php echo $inthebox_section_13_image['sizes']['pgsec_img']; ?>"
+              data-srcset="<?php echo $inthebox_section_13_image['sizes']['pgsec_img']; ?> 300w,
+              <?php echo $inthebox_section_13_image['sizes']['pgsec_img@2x']; ?> 600w,
+              <?php echo $inthebox_section_13_image['sizes']['pgsec_img@3x']; ?> 900w,
+              <?php echo $inthebox_section_13_image['sizes']['pgsec_img@4x']; ?> 1200w"
               sizes="(min-width: 1200px) 400px, (min-width: 970px) 32vw, (min-width: 740px) 56vw, (min-width: 500px) 67vw, 90vw" />
 
             <?php endif; ?>
