@@ -203,7 +203,7 @@ $inthebox_section_13_image = get_field( 'inthebox_section_13_image' );
         <div class="c-img-sec__img-wrap">
           <?php if( $inthebox_section_3_image ): ?>
 
-            <img class="lazyload c-img-sec__img c-img-sec__img--char c-img-sec__img--char--right" title="<?php echo $inthebox_section_3_title ?>" alt="<?php echo $inthebox_section_3_title ?>"data-src="<?php echo $inthebox_section_3_image['sizes']['pgsec_img']; ?>"
+            <img class="lazyload c-img-sec__img c-img-sec__img--char c-img-sec__img--char--right" title="<?php echo $inthebox_section_3_title ?>" alt="<?php echo $inthebox_section_3_title ?>" data-src="<?php echo $inthebox_section_3_image['sizes']['pgsec_img']; ?>"
             data-srcset="<?php echo $inthebox_section_3_image['sizes']['pgsec_img']; ?> 300w,
             <?php echo $inthebox_section_3_image['sizes']['pgsec_img@2x']; ?> 600w,
             <?php echo $inthebox_section_3_image['sizes']['pgsec_img@3x']; ?> 900w,
