@@ -176,11 +176,11 @@ $characters_section_11_image = get_field( 'characters_section_11_image' );
       </div>
       <!-- second column -->
       <div class="l-cl l-cl-sm--10 l-cl-ds--5">
-        <!-- about us section image -->
-        <div class="c-img-sec__img-wrap">
-          <?php if( $characters_section_3_image ): ?>
 
-            <img class="lazyload c-img-sec__img c-img-sec__img--char c-img-sec__img--char--right" title="<?php echo $characters_section_3_title ?>" alt="<?php echo $characters_section_3_title ?>"data-src="<?php echo $characters_section_3_image['sizes']['pgsec_img']; ?>"
+        <div class="c-img-sec__img-wrap">
+          <?php if( $characters_section_5_image ): ?>
+
+            <img class="lazyload c-img-sec__img c-img-sec__img--char c-img-sec__img--char--right" title="<?php echo $characters_section_3_title ?>" alt="<?php echo $characters_section_3_title ?>" data-src="<?php echo $characters_section_3_image['sizes']['pgsec_img']; ?>"
             data-srcset="<?php echo $characters_section_3_image['sizes']['pgsec_img']; ?> 300w,
             <?php echo $characters_section_3_image['sizes']['pgsec_img@2x']; ?> 600w,
             <?php echo $characters_section_3_image['sizes']['pgsec_img@3x']; ?> 900w,
