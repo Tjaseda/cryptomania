@@ -9,6 +9,7 @@ background (city) is styled in _bg-city.scss
   &__content {
     width: 100%;
     z-index: 4;
+    position: relative;
     margin: 40px auto 40px auto;
 
     @include breakpoint(medium) {

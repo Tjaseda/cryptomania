@@ -11,6 +11,8 @@
 $analyticCode = get_option( 'analytic_code' );
 $metaCode = get_option( 'meta_code' );
 
+$siteName =  get_bloginfo( "name" );
+$siteDescription = get_bloginfo( "description" );
 $header_subtitle = get_option( 'header_subtitle' );
 
 $fomrAction = get_option( 'form_action_link' );
@@ -83,7 +85,7 @@ $checkboxMarketingText = get_option( 'checkbox_marketing_text' );
 																							<?php echo get_template_directory_uri() . '/assets/images/city-desktop.png'; ?> 1366w,
 																							<?php echo get_template_directory_uri() . '/assets/images/city-desktop-hi-dpi.png'; ?> 2732w,
 																							<?php echo get_template_directory_uri() . '/assets/images/city-large-hi-dpi.png'; ?> 3840w"
-																			sizes="100vw" />
+																			sizes="100vw" alt="<?php bloginfo( 'name' ) ?>"/>
 					<div class="c-bg-city__overlay"></div>
 				</div><!-- /c-bg-city background -->
 			</div>
@@ -94,7 +96,8 @@ $checkboxMarketingText = get_option( 'checkbox_marketing_text' );
 																						<?php echo get_template_directory_uri() . '/assets/images/logo-middle.png'; ?> 620w,
 																						<?php echo get_template_directory_uri() . '/assets/images/logo-large.png'; ?> 874w,
 																						<?php echo get_template_directory_uri() . '/assets/images/logo-hi-dpi.png'; ?> 1228w"
-																		sizes="(min-width: 1550px) 32vw, (min-width: 970px) 620px, (min-width: 740px) 534px, (min-width: 500px) 555px, (max-width: 500px) 100vw" />
+																		sizes="(min-width: 1550px) 32vw, (min-width: 970px) 620px, (min-width: 740px) 534px, (min-width: 500px) 555px, (max-width: 500px) 100vw"
+																		alt="<?php echo $siteName .  ' - '  . $siteDescription; ?>" title="<?php echo $siteName .  ' - '  . $siteDescription; ?>"/>
 				<!-- /logo -->
 
 				<div class="l-wrap l-mg-b--2 l-mg-b--md-4">
@@ -140,9 +143,10 @@ $checkboxMarketingText = get_option( 'checkbox_marketing_text' );
 																					<?php echo get_template_directory_uri() . '/assets/images/board-middle.png'; ?> 460w,
 																					<?php echo get_template_directory_uri() . '/assets/images/board-big.png'; ?> 570w,
 																					<?php echo get_template_directory_uri() . '/assets/images/board-large.png'; ?> 1094w"
-																	sizes="(min-width: 1550px) 30vw, (min-width: 970px) 516px, (min-width: 740px) 460px, (min-width: 500px) 422px, 76vw" />
+																	sizes="(min-width: 1550px) 30vw, (min-width: 970px) 516px, (min-width: 740px) 460px, (min-width: 500px) 422px, 76vw"
+																	alt="<?php echo $siteName .  ' - '  . $siteDescription; ?>" title="<?php echo $siteName .  ' - '  . $siteDescription; ?>" />
 		</div>
 	</div>
-	</div>
+</div>
 
-	<div id="content" class="site-content">
+<div id="content" class="site-content">

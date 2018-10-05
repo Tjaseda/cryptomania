@@ -52,7 +52,7 @@ $how_section_10_content = get_field( 'how_section_10_content' );
 <div class="o-pg-sec o-pg-sec--white o-pg-sec--pd-lg">
   <!-- top coin background image-->
   <div class="c-bg-coin c-bg-coin--top">
-    <img class="lazyload c-bg-coin__img c-bg-coin__img--top" title="<?php echo $how_section_1_title ?>" alt="<?php echo $how_section_1_title ?>" data-src="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?>"
+    <img class="lazyload c-bg-coin__img c-bg-coin__img--top" alt="<?php echo $how_section_1_title ?>" data-src="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?>"
     data-srcset="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?> 300w,
       <?php echo get_template_directory_uri() . '/assets/images/coin-medium.png'; ?> 600w,
       <?php echo get_template_directory_uri() . '/assets/images/coin-big.png'; ?> 810w,
@@ -82,7 +82,7 @@ $how_section_10_content = get_field( 'how_section_10_content' );
       <div class="l-cl l-cl-sm--10 l-cl-ds--4">
         <!-- about us section image -->
         <div class="c-img-sec__img-wrap">
-          <img class="lazyload c-img-sec__img c-img-sec__img--char1" data-src="<?php echo get_template_directory_uri() . '/assets/images/char-small.png'; ?>"
+          <img class="lazyload c-img-sec__img c-img-sec__img--char1" title="<?php echo $how_section_1_title ?>" alt="<?php echo $how_section_1_title ?>" data-src="<?php echo get_template_directory_uri() . '/assets/images/char-small.png'; ?>"
           data-srcset="<?php echo get_template_directory_uri() . '/assets/images/char-small.png'; ?> 350w,
             <?php echo get_template_directory_uri() . '/assets/images/char-medium.png'; ?> 450w,
             <?php echo get_template_directory_uri() . '/assets/images/char-big.png'; ?> 620w,
@@ -121,7 +121,7 @@ $how_section_10_content = get_field( 'how_section_10_content' );
               <?php echo get_template_directory_uri() . '/assets/images/start-large.png'; ?> 404w"
             sizes="15vw" />
 
-            <img class="lazyload c-img-sec__img c-img-sec__img--chard1-bg c-img-sec__img--chard1-bg--3" data-src="<?php echo get_template_directory_uri() . '/assets/images/start-small.png'; ?>"
+            <img class="lazyload c-img-sec__img c-img-sec__img--chard1-bg c-img-sec__img--chard1-bg--3" title="<?php echo $how_section_2_title ?>" alt="<?php echo $how_section_2_title ?>" data-src="<?php echo get_template_directory_uri() . '/assets/images/start-small.png'; ?>"
             data-srcset="<?php echo get_template_directory_uri() . '/assets/images/start-small.png'; ?> 250w,
               <?php echo get_template_directory_uri() . '/assets/images/start-medium.png'; ?> 350w,
               <?php echo get_template_directory_uri() . '/assets/images/start-large.png'; ?> 404w"
@@ -209,7 +209,7 @@ $how_section_10_content = get_field( 'how_section_10_content' );
               <?php echo get_template_directory_uri() . '/assets/images/india-large.png'; ?> 404w"
             sizes="15vw" />
 
-            <img class="lazyload c-img-sec__img c-img-sec__img--chard1-bg c-img-sec__img--chard1-bg--3" data-src="<?php echo get_template_directory_uri() . '/assets/images/india-small.png'; ?>"
+            <img class="lazyload c-img-sec__img c-img-sec__img--chard1-bg c-img-sec__img--chard1-bg--3" title="<?php echo $how_section_4_title ?>" alt="<?php echo $how_section_4_title ?>" data-src="<?php echo get_template_directory_uri() . '/assets/images/india-small.png'; ?>"
             data-srcset="<?php echo get_template_directory_uri() . '/assets/images/india-small.png'; ?> 250w,
               <?php echo get_template_directory_uri() . '/assets/images/india-medium.png'; ?> 350w,
               <?php echo get_template_directory_uri() . '/assets/images/india-large.png'; ?> 404w"

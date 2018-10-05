@@ -70,7 +70,7 @@ $characters_section_11_image = get_field( 'characters_section_11_image' );
 <div class="o-pg-sec o-pg-sec--white o-pg-sec--pd-md">
   <!-- top coin background image-->
   <div class="c-bg-coin c-bg-coin--top">
-    <img class="lazyload c-bg-coin__img c-bg-coin__img--top" data-src="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?>"
+    <img class="lazyload c-bg-coin__img c-bg-coin__img--top" alt="<?php bloginfo( 'name' ); ?>" data-src="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?>"
     data-srcset="<?php echo get_template_directory_uri() . '/assets/images/default.png'; ?> 300w,
       <?php echo get_template_directory_uri() . '/assets/images/coin-medium.png'; ?> 600w,
       <?php echo get_template_directory_uri() . '/assets/images/coin-big.png'; ?> 810w,

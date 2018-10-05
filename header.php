@@ -8,6 +8,8 @@
  *
  * @package Cryptomania
  */
+$siteName = get_bloginfo( 'name' );
+$siteDescription = get_bloginfo( 'description' );
 
 $analyticCode = get_option( 'analytic_code' );
 $metaCode = get_option( 'meta_code' );
@@ -37,7 +39,7 @@ $metaCode = get_option( 'meta_code' );
 					<div class="toggle-nav__line"></div>
 				</a><!-- /toggle nav -->
 
-				<a href="<?php echo home_url(); ?>"><img class="c-nav__logo" src="<?php echo get_template_directory_uri() . '/assets/images/logo-2.png'; ?>" alt="<?php bloginfo( 'name' ); ?>" /></a>
+				<a href="<?php echo home_url(); ?>"><img class="c-nav__logo" src="<?php echo get_template_directory_uri() . '/assets/images/logo-2.png'; ?>" alt="<?php echo $siteName .  ' - '  . $siteDescription; ?>" title="<?php echo $siteName .  ' - '  . $siteDescription; ?>" /></a>
 			</div><!-- /logo -->
 
 			<nav id="site-navigation" class="js-main-nav c-nav__nav c-nav__nav--page l-cl l-cl-sm--6">
@@ -69,7 +71,7 @@ $metaCode = get_option( 'meta_code' );
 																						<?php echo get_template_directory_uri() . '/assets/images/city-desktop.png'; ?> 1366w,
 																						<?php echo get_template_directory_uri() . '/assets/images/city-desktop-hi-dpi.png'; ?> 2732w,
 																						<?php echo get_template_directory_uri() . '/assets/images/city-large-hi-dpi.png'; ?> 3840w"
-																		sizes="100vw" />
+																		sizes="100vw" alt="<?php echo $siteName; ?>" />
 
 				<div class="c-bg-city__overlay"></div>
 			</div><!-- /c-bg-city image wrap-->

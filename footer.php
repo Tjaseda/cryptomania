@@ -8,6 +8,8 @@
  *
  * @package Cryptomania
  */
+ $siteName =  get_bloginfo( "name" );
+ $siteDescription = get_bloginfo( "description" );
 
 $footerFormText = get_option( 'footer_form_title' );
 $footerText = get_option( 'footer_copyright' );
@@ -46,7 +48,7 @@ $companyYoutube = get_option( 'company_youtube' );
 																						<?php echo get_template_directory_uri() . '/assets/images/city-desktop.png'; ?> 1366w,
 																						<?php echo get_template_directory_uri() . '/assets/images/city-desktop-hi-dpi.png'; ?> 2732w,
 																						<?php echo get_template_directory_uri() . '/assets/images/city-large-hi-dpi.png'; ?> 3840w"
-																		sizes="100vw" />
+																		sizes="100vw" alt="<?php echo $siteName .  ' - '  . $siteDescription; ?>" />
 
 				<div class="c-bg-city__overlay"></div>
 			</div>

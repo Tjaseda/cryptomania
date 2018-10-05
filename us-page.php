@@ -7,6 +7,9 @@
 
 get_header();
 
+$siteName =  get_bloginfo( "name" );
+$siteDescription = get_bloginfo( "description" );
+
 $about_us_title = get_field( 'about_us_title' );
 $about_us_subtitle = get_field( 'about_us_subtitle' );
 $about_us_content = get_field( 'about_us_content' );
@@ -27,7 +30,7 @@ $companyEmail = get_option( 'company_email' );
       <?php echo get_template_directory_uri() . '/assets/images/coin-big.png'; ?> 810w,
       <?php echo get_template_directory_uri() . '/assets/images/coin-large.png'; ?> 1000w,
       <?php echo get_template_directory_uri() . '/assets/images/coin-hi-dpi.png'; ?> 1536w"
-    sizes="(min-width: 1550px) 40vw, (min-width: 970px) 50vw, 20vw" />
+    sizes="(min-width: 1550px) 40vw, (min-width: 970px) 50vw, 20vw" alt="<?php echo $siteName; ?>"/>
   </div>
 
   <div class="l-container">
@@ -75,7 +78,7 @@ $companyEmail = get_option( 'company_email' );
       </div>
       <!-- second column -->
       <div class="l-cl l-cl-sm--10 l-cl-ds--4 l-mg-y--2">
-        <img class="lazyload c-img-sec__img c-img-sec__img--logo" data-srcset="<?php echo get_template_directory_uri() . '/assets/images/wololo-dark.svg'; ?>" />
+        <img class="lazyload c-img-sec__img c-img-sec__img--logo" data-srcset="<?php echo get_template_directory_uri() . '/assets/images/wololo-dark.svg'; ?>" alt="<?php echo $companyName; ?>" title="<?php echo $companyName; ?>"/>
       </div>
 
     </div><!-- /row -->

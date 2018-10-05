@@ -7,6 +7,9 @@
 
 get_header( 'front' );
 
+$siteName =  get_bloginfo( "name" );
+$siteDescription = get_bloginfo( "description" );
+
 $front_section_1_title = get_field( 'front_section_1_title' );
 $front_section_1_subtitle = get_field( 'front_section_1_subtitle' );
 $front_section_1_content = get_field( 'front_section_1_content' );
@@ -48,7 +51,7 @@ $front_section_5_link = get_field( 'front_section_5_link' );
 					<?php echo get_template_directory_uri() . '/assets/images/coin-big.png'; ?> 810w,
 					<?php echo get_template_directory_uri() . '/assets/images/coin-large.png'; ?> 1000w,
 					<?php echo get_template_directory_uri() . '/assets/images/coin-hi-dpi.png'; ?> 1536w"
-				sizes="(min-width: 1550px) 40vw, (min-width: 970px) 50vw, 20vw" />
+				sizes="(min-width: 1550px) 40vw, (min-width: 970px) 50vw, 20vw" alt="<?php echo $siteName .  ' - '  . $siteDescription; ?>" />
 			</div>
 			<!-- bottom coin background image-->
 			<div class="c-bg-coin c-bg-coin--bottom">
@@ -58,7 +61,7 @@ $front_section_5_link = get_field( 'front_section_5_link' );
 					<?php echo get_template_directory_uri() . '/assets/images/coin-big.png'; ?> 810w,
 					<?php echo get_template_directory_uri() . '/assets/images/coin-large.png'; ?> 1000w,
 					<?php echo get_template_directory_uri() . '/assets/images/coin-hi-dpi.png'; ?> 1536w"
-				sizes="(min-width: 1550px) 40vw, (min-width: 970px) 50vw, 20vw" />
+				sizes="(min-width: 1550px) 40vw, (min-width: 970px) 50vw, 20vw" alt="<?php echo $siteName .  ' - '  . $siteDescription; ?>"/>
 			</div>
 
 			<div class="l-container">
@@ -107,7 +110,7 @@ $front_section_5_link = get_field( 'front_section_5_link' );
 									<?php echo get_template_directory_uri() . '/assets/images/cityfull-big.png'; ?> 1120w,
 									<?php echo get_template_directory_uri() . '/assets/images/cityfull-large.png'; ?> 1400w,
 									<?php echo get_template_directory_uri() . '/assets/images/cityfull-hi-dpi.png'; ?> 2150w"
-								sizes="(min-width: 970px) 56vw, 20vw" />
+								sizes="(min-width: 970px) 56vw, 20vw" alt="<?php echo $siteName .  ' - '  . $siteDescription; ?>" />
 							</div>
 							<!-- top image of how to play page section-->
 							<div class="c-bg-cityfull__img-top">
@@ -116,7 +119,7 @@ $front_section_5_link = get_field( 'front_section_5_link' );
 									<?php echo get_template_directory_uri() . '/assets/images/circle-medium.png'; ?> 480w,
 									<?php echo get_template_directory_uri() . '/assets/images/circle-large.png'; ?> 600w,
 									<?php echo get_template_directory_uri() . '/assets/images/circle-hi-dpi.png'; ?> 920w"
-								sizes="(min-width: 1550px) 50vw, (min-width: 740px) 60vw, (min-width: 500px) 55vw, 75vw" />
+								sizes="(min-width: 1550px) 50vw, (min-width: 740px) 60vw, (min-width: 500px) 55vw, 75vw" alt="<?php echo $siteName .  ' - '  . $siteDescription; ?>"/>
 							</div>
 						</div>
 						<!-- second column -->
@@ -173,7 +176,7 @@ $front_section_5_link = get_field( 'front_section_5_link' );
 								<?php echo get_template_directory_uri() . '/assets/images/characters-big.png'; ?> 800w,
 								<?php echo get_template_directory_uri() . '/assets/images/characters-large.png'; ?> 1000w,
 								<?php echo get_template_directory_uri() . '/assets/images/characters-hi-dpi.png'; ?> 1383w"
-							sizes="(min-width: 970px) 32vw, (min-width: 740px) 56vw, (min-width: 500px) 67vw, 90vw" />
+							sizes="(min-width: 970px) 32vw, (min-width: 740px) 56vw, (min-width: 500px) 67vw, 90vw" alt="<?php echo $siteName .  ' - '  . $siteDescription; ?>" />
 						</div>
 					</div>
 
@@ -205,9 +208,9 @@ $front_section_5_link = get_field( 'front_section_5_link' );
 					<!-- share component -->
 					<div class="c-share">
 						<div class="c-share__icon-wrap">
-							<a id="share" href="https://twitter.com/intent/tweet?text=<?php echo $front_section_4_share_link ?>" target="_blank"><i class="icon-Icon_Twitter_blank icon-20 c-share__icon c-share__icon--twitter"></i></a>
-							<a id="share" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $front_section_4_share_link ?>" target="_blank"><i class="icon-Icon_Facebook_blank icon-20 c-share__icon c-share__icon--facebook"></i></a>
-							<a id="mail" href="mailto:?Subject=<?php echo $front_section_4_share_link ?>" target="_blank"><i class="icon-email1 icon-17 icon-white c-share__icon"></i></a>
+							<a id="share" href="https://twitter.com/intent/tweet?text=<?php echo $front_section_4_share_link ?>" target="_blank" title="Twitter"><i class="icon-Icon_Twitter_blank icon-20 c-share__icon c-share__icon--twitter"></i></a>
+							<a id="share" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $front_section_4_share_link ?>" target="_blank" title="Facebook"><i class="icon-Icon_Facebook_blank icon-20 c-share__icon c-share__icon--facebook"></i></a>
+							<a id="mail" href="mailto:?Subject=<?php echo $front_section_4_share_link ?>" target="_blank" title="email"><i class="icon-email1 icon-17 icon-white c-share__icon"></i></a>
 						</div>
 					</div>
 				</div><!-- /wrap -->
@@ -230,7 +233,7 @@ $front_section_5_link = get_field( 'front_section_5_link' );
 								<?php echo get_template_directory_uri() . '/assets/images/box-big.jpg'; ?> 900w,
 								<?php echo get_template_directory_uri() . '/assets/images/box-large.jpg'; ?> 1300w,
 								<?php echo get_template_directory_uri() . '/assets/images/box-hi-dpi.jpg'; ?> 2305w"
-							sizes="(min-width: 740px) 60vw, (min-width: 500px) 70vw, 80vw" />
+							sizes="(min-width: 740px) 60vw, (min-width: 500px) 70vw, 80vw" alt="<?php echo $siteName .  ' - '  . $siteDescription; ?>"/>
 						</div>
 					</div>
 					<!-- second column -->
@@ -248,7 +251,7 @@ $front_section_5_link = get_field( 'front_section_5_link' );
 							<?php if( $front_section_5_link ):
 
 								?>
-								<a class="o-a o-txt--green o-txt--ps-right" href="<?php echo $front_section_5_link ?>" tile="<?php echo $front_section_5_link_text ?>"><i class="icon-arrow-right icon-sm"></i> <?php echo $front_section_5_link_text ?></a>
+								<a class="o-a o-txt--green o-txt--ps-right" href="<?php echo $front_section_5_link ?>" title="<?php echo $front_section_5_link_text ?>"><i class="icon-arrow-right icon-sm"></i> <?php echo $front_section_5_link_text ?></a>
 							<?php endif; ?>
 						</div>
 					</div>

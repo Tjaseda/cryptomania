@@ -8,6 +8,10 @@
  *
  * @package Cryptomania
  */
+
+$siteName =  get_bloginfo( "name" );
+$siteDescription = get_bloginfo( "description" );
+
 $analyticCode = get_option( 'analytic_code' );
 $metaCode = get_option( 'meta_code' );
 
@@ -45,7 +49,7 @@ $fofBtnText = get_option( '404_button_text' );
 																							<?php echo get_template_directory_uri() . '/assets/images/city-desktop.png'; ?> 1366w,
 																							<?php echo get_template_directory_uri() . '/assets/images/city-desktop-hi-dpi.png'; ?> 2732w,
 																							<?php echo get_template_directory_uri() . '/assets/images/city-large-hi-dpi.png'; ?> 3840w"
-																			sizes="100vw" />
+																			sizes="100vw" alt="<?php echo $siteName; ?>"/>
 					<div class="c-bg-city__overlay"></div>
 				</div><!-- /c-bg-city background -->
 			</div>
