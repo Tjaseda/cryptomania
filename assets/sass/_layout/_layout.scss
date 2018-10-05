@@ -149,6 +149,13 @@
   align-items: center;
   -ms-flex-negative: 0;
 
+  &--baseline {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    -ms-flex-negative: 0;
+  }
+
   &-sm {
     &--10 {
       width: 100%;

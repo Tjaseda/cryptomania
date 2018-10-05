@@ -24,10 +24,10 @@
           $content = $post->post_content;
         ?>
 
-        <div class="l-cl l-cl-sm--10 l-cl-ds-lg--3">
+        <div class="l-cl--baseline l-cl-sm--10 l-cl-ds-lg--3">
           <div class="l-row l-row-sm--col-o l-row-md-sm--row-o l-row-ds-md--col-o c-team__wrap l-mg-y--4 l-mg-ds--0">
 
-            <div class="l-cl l-cl-sm--10 l-cl-md-sm--4 l-cl-ds-lg--10 c-team__img-wrap">
+            <div class="l-cl--baseline l-cl-sm--10 l-cl-md-sm--4 l-cl-ds-lg--10 c-team__img-wrap">
               <?php the_post_thumbnail( 'testimonial_img', array( 'class' => 'lazyload c-team__image', 'alt' => $title, 'title' => $title ) )?>
             </div>
             <div class="l-cl l-cl-sm--10 l-cl-md-sm--6 l-cl-ds-lg--10 c-team__txt-wrap l-mg-t--3 l-mg-t-md-sm--0 l-mg-t-ds-lg--3">
