@@ -300,6 +300,34 @@ $front_section_5_link = get_field( 'front_section_5_link' );
 				$front_table_feature9_version_1 = get_field( 'front_table_feature9_version_1' );
 				$front_table_feature9_version_2 = get_field( 'front_table_feature9_version_2' );
 
+				$front_table_feature10 = get_field( 'front_table_feature10' );
+				$front_table_feature10_version_1 = get_field( 'front_table_feature10_version_1' );
+				$front_table_feature10_version_2 = get_field( 'front_table_feature10_version_2' );
+
+				$front_table_feature11 = get_field( 'front_table_feature11' );
+				$front_table_feature11_version_1 = get_field( 'front_table_feature11_version_1' );
+				$front_table_feature11_version_2 = get_field( 'front_table_feature11_version_2' );
+
+				$front_table_feature12 = get_field( 'front_table_feature12' );
+				$front_table_feature12_version_1 = get_field( 'front_table_feature12_version_1' );
+				$front_table_feature12_version_2 = get_field( 'front_table_feature12_version_2' );
+
+				$front_table_feature13 = get_field( 'front_table_feature13' );
+				$front_table_feature13_version_1 = get_field( 'front_table_feature13_version_1' );
+				$front_table_feature13_version_2 = get_field( 'front_table_feature13_version_2' );
+
+				$front_table_feature14 = get_field( 'front_table_feature14' );
+				$front_table_feature14_version_1 = get_field( 'front_table_feature14_version_1' );
+				$front_table_feature14_version_2 = get_field( 'front_table_feature14_version_2' );
+
+				$front_table_feature15 = get_field( 'front_table_feature15' );
+				$front_table_feature15_version_1 = get_field( 'front_table_feature15_version_1' );
+				$front_table_feature15_version_2 = get_field( 'front_table_feature15_version_2' );
+
+				$front_table_feature16 = get_field( 'front_table_feature16' );
+				$front_table_feature16_version_1 = get_field( 'front_table_feature16_version_1' );
+				$front_table_feature16_version_2 = get_field( 'front_table_feature16_version_2' );
+
 				$front_section_add_price_table = get_field( 'front_section_add_price_table' );
 				$front_section_version1_price = get_field( 'front_section_version1_price' );
 				$front_section_version2_price = get_field( 'front_section_version2_price' );
@@ -386,6 +414,55 @@ $front_section_5_link = get_field( 'front_section_5_link' );
 										<td><?php echo $front_table_feature9 ?></td>
 										<td><?php if( $front_table_feature9_version_1 === 'yes'): ?> <i class="icon-check icon-22"></i> <?php endif; ?></td>
 										<td><?php if( $front_table_feature9_version_2 === 'yes'): ?> <i class="icon-check icon-22"></i> <?php endif; ?></td>
+									</tr>
+									<?php endif; ?>
+									<?php if( $front_table_feature10 ): ?>
+									<tr>
+										<td><?php echo $front_table_feature10 ?></td>
+										<td><?php if( $front_table_feature10_version_1 === 'yes'): ?> <i class="icon-check icon-22"></i> <?php endif; ?></td>
+										<td><?php if( $front_table_feature10_version_2 === 'yes'): ?> <i class="icon-check icon-22"></i> <?php endif; ?></td>
+									</tr>
+									<?php endif; ?>
+									<?php if( $front_table_feature11 ): ?>
+									<tr>
+										<td><?php echo $front_table_feature11 ?></td>
+										<td><?php if( $front_table_feature11_version_1 === 'yes'): ?> <i class="icon-check icon-22"></i> <?php endif; ?></td>
+										<td><?php if( $front_table_feature11_version_2 === 'yes'): ?> <i class="icon-check icon-22"></i> <?php endif; ?></td>
+									</tr>
+									<?php endif; ?>
+									<?php if( $front_table_feature12 ): ?>
+									<tr>
+										<td><?php echo $front_table_feature12 ?></td>
+										<td><?php if( $front_table_feature12_version_1 === 'yes'): ?> <i class="icon-check icon-22"></i> <?php endif; ?></td>
+										<td><?php if( $front_table_feature12_version_2 === 'yes'): ?> <i class="icon-check icon-22"></i> <?php endif; ?></td>
+									</tr>
+									<?php endif; ?>
+									<?php if( $front_table_feature13 ): ?>
+									<tr>
+										<td><?php echo $front_table_feature13 ?></td>
+										<td><?php if( $front_table_feature13_version_1 === 'yes'): ?> <i class="icon-check icon-22"></i> <?php endif; ?></td>
+										<td><?php if( $front_table_feature13_version_2 === 'yes'): ?> <i class="icon-check icon-22"></i> <?php endif; ?></td>
+									</tr>
+									<?php endif; ?>
+									<?php if( $front_table_feature14 ): ?>
+									<tr>
+										<td><?php echo $front_table_feature14 ?></td>
+										<td><?php if( $front_table_feature14_version_1 === 'yes'): ?> <i class="icon-check icon-22"></i> <?php endif; ?></td>
+										<td><?php if( $front_table_feature14_version_2 === 'yes'): ?> <i class="icon-check icon-22"></i> <?php endif; ?></td>
+									</tr>
+									<?php endif; ?>
+									<?php if( $front_table_feature15 ): ?>
+									<tr>
+										<td><?php echo $front_table_feature15 ?></td>
+										<td><?php if( $front_table_feature15_version_1 === 'yes'): ?> <i class="icon-check icon-22"></i> <?php endif; ?></td>
+										<td><?php if( $front_table_feature15_version_2 === 'yes'): ?> <i class="icon-check icon-22"></i> <?php endif; ?></td>
+									</tr>
+									<?php endif; ?>
+									<?php if( $front_table_feature16 ): ?>
+									<tr>
+										<td><?php echo $front_table_feature16 ?></td>
+										<td><?php if( $front_table_feature16_version_1 === 'yes'): ?> <i class="icon-check icon-22"></i> <?php endif; ?></td>
+										<td><?php if( $front_table_feature16_version_2 === 'yes'): ?> <i class="icon-check icon-22"></i> <?php endif; ?></td>
 									</tr>
 									<?php endif; ?>
 								</table><!-- /box comparisone table -->
