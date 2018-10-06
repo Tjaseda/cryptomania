@@ -46,6 +46,9 @@ function cryptomania_admin_menu() {
     register_setting( 'cryptomania_options_social', 'company_phone' );
     register_setting( 'cryptomania_options_social', 'company_email' );
     register_setting( 'cryptomania_options_social', 'company_address' );
+    register_setting( 'cryptomania_options_social', 'company_pr_name' );
+    register_setting( 'cryptomania_options_social', 'company_pr_phone' );
+    register_setting( 'cryptomania_options_social', 'company_pr_email' );
     register_setting( 'cryptomania_options_social', 'company_twitter' );
     register_setting( 'cryptomania_options_social', 'company_facebook' );
     register_setting( 'cryptomania_options_social', 'company_instagram' );
@@ -102,6 +105,9 @@ function cryptomania_admin_menu() {
     add_settings_field( 'company_phone', 'Company Phone', 'cryptomania_company_phone', 'cryptomania_options_social', 'cryptomania-social-contact-options' );
     add_settings_field( 'company_email', 'Company Email', 'cryptomania_company_email', 'cryptomania_options_social', 'cryptomania-social-contact-options' );
     add_settings_field( 'company_address', 'Company Address', 'cryptomania_company_address', 'cryptomania_options_social', 'cryptomania-social-contact-options' );
+    add_settings_field( 'company_pr_name', 'Company PR Title', 'cryptomania_company_pr_name', 'cryptomania_options_social', 'cryptomania-social-contact-options' );
+    add_settings_field( 'company_pr_phone', 'Company PR Phone', 'cryptomania_company_pr_phone', 'cryptomania_options_social', 'cryptomania-social-contact-options' );
+    add_settings_field( 'company_pr_email', 'Company PR Email', 'cryptomania_company_pr_email', 'cryptomania_options_social', 'cryptomania-social-contact-options' );
     add_settings_field( 'company_twitter', 'Twitter', 'cryptomania_company_twitter', 'cryptomania_options_social', 'cryptomania-social-media-options' );
     add_settings_field( 'company_facebook', 'Facebook', 'cryptomania_company_facebook', 'cryptomania_options_social', 'cryptomania-social-media-options' );
     add_settings_field( 'company_instagram', 'Instagram', 'cryptomania_company_instagram', 'cryptomania_options_social', 'cryptomania-social-media-options' );
@@ -163,6 +169,21 @@ function cryptomania_company_facebook() {
 function cryptomania_company_twitter() {
   $twitterURL = html_entity_decode( esc_attr( get_option( 'company_twitter' ) ) );
   echo '<input id="company_twitter" class="regular-text" type="url" name="company_twitter" value="'.$twitterURL.'" placeholder="https://..." />';
+}
+
+function cryptomania_company_pr_email() {
+  $companyPREmail = html_entity_decode( esc_attr( get_option( 'company_pr_email' ) ) );
+  echo '<input id="company_pr_email" class="regular-text" type="email" name="company_pr_email" value="'.$companyPREmail.'" placeholder="example@mail.com" />';
+}
+
+function cryptomania_company_pr_phone() {
+  $companyPRPhone = html_entity_decode( esc_attr( get_option( 'company_pr_phone' ) ) );
+  echo '<input id="company_pr_phone" class="regular-text" type="text" name="company_pr_phone" value="'.$companyPRPhone.'" />';
+}
+
+function cryptomania_company_pr_name() {
+  $companyPRName = html_entity_decode( esc_attr( get_option( 'company_pr_name' ) ) );
+  echo '<input id="company_pr_name" class="regular-text" type="text" name="company_pr_name" value="'.$companyPRName.'" />';
 }
 
 function cryptomania_company_address() {

@@ -19,6 +19,10 @@ $companyName = get_option( 'company_name' );
 $companyAddress = get_option( 'company_address' );
 $companyPhone = get_option( 'company_phone' );
 $companyEmail = get_option( 'company_email' );
+
+$companyPRName = get_option( 'company_pr_name' );
+$companyPRPhone = get_option( 'company_pr_phone' );
+$companyPREmail = get_option( 'company_pr_email' );
 ?>
 
 <div class="o-pg-sec o-pg-sec--white o-pg-sec--pd-sm">
@@ -70,9 +74,22 @@ $companyEmail = get_option( 'company_email' );
               <?php if( $companyAddress ) : ?>
               <div class="c-contact__info c-contact__info--two">
                 <p class="o-s o-s__1 o-txt--gray"><?php echo $companyAddress; ?></p>
-              </div>
+              </div><br /><br />
             <?php endif; ?>
 
+            </div>
+            <div class="c-contact">
+              <?php if( $companyPRName ) : ?>
+                <p class="o-s o-s__1 o-txt--gray"><b><?php echo $companyPRName; ?></b></p>
+              <?php endif; ?>
+              <div>
+                <?php if( $companyPREmail ) : ?>
+                  <div class="c-contact__info-item"><i class="icon-email1 icon-sm icon-purple"></i>  <span class="o-s o-s__1 o-txt--gray c-contact__info-text"><?php echo $companyPREmail; ?></span></div>
+                <?php endif; ?>
+                <?php if( $companyPRPhone ) : ?>
+                  <div class="c-contact__info-item"><i class="icon-phone icon-18 icon-purple"></i>  <span class="o-s o-s__1 o-txt--gray c-contact__info-text"><?php echo $companyPRPhone; ?></span></div>
+                <?php endif; ?>
+              </div>
             </div>
           </div>
       </div>
