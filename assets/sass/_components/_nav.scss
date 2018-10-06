@@ -2,6 +2,15 @@
   color: $green;
 }
 
+.menu li.kickstarter-link a {
+  color: $orange;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $darorange;
+  }
+}
+
 .c-nav {
   /*
   Navigation modifiers
