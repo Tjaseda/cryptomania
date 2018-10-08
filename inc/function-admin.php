@@ -14,7 +14,7 @@ function cryptomania_admin_menu() {
     add_submenu_page( 'cryptomania_options', 'General Theme Options', 'General', 'manage_network_options', 'cryptomania_options', 'cryptomania_theme_create_page' );
     add_submenu_page( 'cryptomania_options', 'Cryptomania Form Options', 'Form', 'manage_network_options', 'cryptomania_options_form', 'cryptomania_theme_form_settings' );
     add_submenu_page( 'cryptomania_options', 'Cryptomania Social Options', 'Social', 'manage_network_options', 'cryptomania_options_social', 'cryptomania_theme_social_settings' );
-    add_submenu_page( 'cryptomania_options', 'Cryptomania Analytic Options', 'Google Analytic', 'manage_network_options', 'cryptomania_options_analytic', 'cryptomania_theme_analytic_settings' );
+    add_submenu_page( 'cryptomania_options', 'Cryptomania Analytic Options', 'Marketing', 'manage_network_options', 'cryptomania_options_analytic', 'cryptomania_theme_analytic_settings' );
     add_submenu_page( 'cryptomania_options', 'Cryptomania Meta Tags', 'Meta Tags', 'manage_network_options', 'cryptomania_options_meta', 'cryptomania_theme_meta_settings' );
 
     // General
@@ -57,6 +57,7 @@ function cryptomania_admin_menu() {
     register_setting( 'cryptomania_options_analytic', 'analytic_code' );
     register_setting( 'cryptomania_options_analytic', 'tagmanager_code_1' );
     register_setting( 'cryptomania_options_analytic', 'tagmanager_code_2' );
+    register_setting( 'cryptomania_options_analytic', 'fb_pixel_code' );
     //Meta
     register_setting( 'cryptomania_options_meta', 'meta_code' );
 
@@ -118,6 +119,7 @@ function cryptomania_admin_menu() {
     add_settings_field( 'analytic_code', 'Google Analytics Code', 'cryptomania_analytic_code', 'cryptomania_options_analytic', 'cryptomania-analytic-options' );
     add_settings_field( 'tagmanager_code_1', 'Google Tag Manager First Code', 'cryptomania_tagmanager_code_1', 'cryptomania_options_analytic', 'cryptomania-analytic-options' );
     add_settings_field( 'tagmanager_code_2', 'Google Tag Manager Second Code', 'cryptomania_tagmanager_code_2', 'cryptomania_options_analytic', 'cryptomania-analytic-options' );
+    add_settings_field( 'fb_pixel_code', 'Facebook Pixel Code', 'cryptomania_fb_pixel_code', 'cryptomania_options_analytic', 'cryptomania-analytic-options' );
     //Meta
     add_settings_field( 'meta_code', 'Head Meta Code', 'cryptomania_meta_code', 'cryptomania_options_meta', 'cryptomania-meta-options' );
 
@@ -146,6 +148,11 @@ function cryptomania_meta_code() {
     ANALYTIC
 *========================
 */
+function cryptomania_fb_pixel_code() {
+  $fbPixelCode = html_entity_decode( esc_attr( get_option( 'fb_pixel_code' ) ) );
+  echo '<textarea type="textares" rows="7" cols="70" id="fb_pixel_code" name="fb_pixel_code">'.$fbPixelCode.'</textarea>';
+}
+
 function cryptomania_tagmanager_code_2() {
   $tagmanagerCodeTwo = html_entity_decode( esc_attr( get_option( 'tagmanager_code_2' ) ) );
   echo '<textarea type="textares" rows="7" cols="70" id="tagmanager_code_2" name="tagmanager_code_2">'.$tagmanagerCodeTwo.'</textarea>';
@@ -360,7 +367,7 @@ function cryptomania_meta_options() {
 *========================
 */
 function cryptomania_analytic_options() {
-  echo '<br /><br /><hr /><h2 class="title"><span class="dashicons dashicons-admin-generic"></span> GOOGLE ANALYTIC OPTIONS</h2><hr />';
+  echo '<br /><br /><hr /><h2 class="title"><span class="dashicons dashicons-admin-generic"></span> MARKETING OPTIONS</h2><hr />';
 }
 /*
 *========================

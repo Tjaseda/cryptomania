@@ -11,6 +11,7 @@
 $tagmanagerCodeOne = get_option( 'tagmanager_code_1' );
 $tagmanagerCodeTwo = get_option( 'tagmanager_code_2' );
 $analyticCode = get_option( 'analytic_code' );
+$fbPixelCode = get_option( 'fb_pixel_code' );
 $metaCode = get_option( 'meta_code' );
 
 $siteName =  get_bloginfo( "name" );
@@ -57,6 +58,9 @@ $checkboxMarketingText = get_option( 'checkbox_marketing_text' );
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cryptomania' ); ?></a>
 
 		<header id="masthead" class="site-header">
+			<?php if($fbPixelCode) : ?>
+				<?php echo $fbPixelCode; ?>
+			<?php endif; ?>
 
 			<div class="c-bg-city c-bg-city--lg">
 
