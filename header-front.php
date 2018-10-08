@@ -40,6 +40,10 @@ $checkboxMarketingText = get_option( 'checkbox_marketing_text' );
 	<?php if($tagmanagerCodeOne) : ?>
 		<?php echo $tagmanagerCodeOne; ?>
 	<?php endif; ?>
+
+	<?php if($fbPixelCode) : ?>
+		<?php echo $fbPixelCode; ?>
+	<?php endif; ?>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
@@ -58,9 +62,6 @@ $checkboxMarketingText = get_option( 'checkbox_marketing_text' );
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cryptomania' ); ?></a>
 
 		<header id="masthead" class="site-header">
-			<?php if($fbPixelCode) : ?>
-				<?php echo $fbPixelCode; ?>
-			<?php endif; ?>
 
 			<div class="c-bg-city c-bg-city--lg">
 

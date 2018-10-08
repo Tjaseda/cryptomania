@@ -24,6 +24,10 @@ $metaCode = get_option( 'meta_code' );
 	<?php if($tagmanagerCodeOne) : ?>
 		<?php echo $tagmanagerCodeOne; ?>
 	<?php endif; ?>
+	
+	<?php if($fbPixelCode) : ?>
+		<?php echo $fbPixelCode; ?>
+	<?php endif; ?>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
@@ -42,9 +46,6 @@ $metaCode = get_option( 'meta_code' );
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cryptomania' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<?php if($fbPixelCode) : ?>
-			<?php echo $fbPixelCode; ?>
-		<?php endif; ?>
 
 		<div class="l-pos--rel c-nav--white c-nav--mg l-row l-row-sm--row-o">
 			<div class="l-c l-c-lf l-cl-sm--2 l-pos--rel ">
