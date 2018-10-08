@@ -12,6 +12,8 @@
 $siteName =  get_bloginfo( "name" );
 $siteDescription = get_bloginfo( "description" );
 
+$tagmanagerCodeOne = get_option( 'tagmanager_code_1' );
+$tagmanagerCodeTwo = get_option( 'tagmanager_code_2' );
 $analyticCode = get_option( 'analytic_code' );
 $metaCode = get_option( 'meta_code' );
 
@@ -24,6 +26,9 @@ $fofBtnText = get_option( '404_button_text' );
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html <?php language_attributes(); ?>>
 <head>
+	<?php if($tagmanagerCodeOne) : ?>
+		<?php echo $tagmanagerCodeOne; ?>
+	<?php endif; ?>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
@@ -34,6 +39,10 @@ $fofBtnText = get_option( '404_button_text' );
 </head>
 
 <body <?php body_class(); ?>>
+	<?php if($tagmanagerCodeTwo) : ?>
+		<?php echo $tagmanagerCodeTwo; ?>
+	<?php endif; ?>
+	
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cryptomania' ); ?></a>
 

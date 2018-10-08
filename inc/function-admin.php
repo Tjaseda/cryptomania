@@ -55,6 +55,8 @@ function cryptomania_admin_menu() {
     register_setting( 'cryptomania_options_social', 'company_youtube' );
     //Analytic
     register_setting( 'cryptomania_options_analytic', 'analytic_code' );
+    register_setting( 'cryptomania_options_analytic', 'tagmanager_code_1' );
+    register_setting( 'cryptomania_options_analytic', 'tagmanager_code_2' );
     //Meta
     register_setting( 'cryptomania_options_meta', 'meta_code' );
 
@@ -114,6 +116,8 @@ function cryptomania_admin_menu() {
     add_settings_field( 'company_youtube', 'YouTube', 'cryptomania_company_youtube', 'cryptomania_options_social', 'cryptomania-social-media-options' );
     //Analytic
     add_settings_field( 'analytic_code', 'Google Analytics Code', 'cryptomania_analytic_code', 'cryptomania_options_analytic', 'cryptomania-analytic-options' );
+    add_settings_field( 'tagmanager_code_1', 'Google Tag Manager First Code', 'cryptomania_tagmanager_code_1', 'cryptomania_options_analytic', 'cryptomania-analytic-options' );
+    add_settings_field( 'tagmanager_code_2', 'Google Tag Manager Second Code', 'cryptomania_tagmanager_code_2', 'cryptomania_options_analytic', 'cryptomania-analytic-options' );
     //Meta
     add_settings_field( 'meta_code', 'Head Meta Code', 'cryptomania_meta_code', 'cryptomania_options_meta', 'cryptomania-meta-options' );
 
@@ -142,6 +146,16 @@ function cryptomania_meta_code() {
     ANALYTIC
 *========================
 */
+function cryptomania_tagmanager_code_2() {
+  $tagmanagerCodeTwo = html_entity_decode( esc_attr( get_option( 'tagmanager_code_2' ) ) );
+  echo '<textarea type="textares" rows="7" cols="70" id="tagmanager_code_2" name="tagmanager_code_2">'.$tagmanagerCodeTwo.'</textarea>';
+}
+
+function cryptomania_tagmanager_code_1() {
+  $tagmanagerCodeOne = html_entity_decode( esc_attr( get_option( 'tagmanager_code_1' ) ) );
+  echo '<textarea type="textares" rows="7" cols="70" id="tagmanager_code_1" name="tagmanager_code_1">'.$tagmanagerCodeOne.'</textarea>';
+}
+
 function cryptomania_analytic_code() {
   $analyticCode = html_entity_decode( esc_attr( get_option( 'analytic_code' ) ) );
   echo '<textarea type="textares" rows="7" cols="70" id="analytic_code" name="analytic_code">'.$analyticCode.'</textarea>';
