@@ -35,7 +35,10 @@ function cryptomania_admin_menu() {
     register_setting( 'cryptomania_options_form', 'field_1_name' );
     register_setting( 'cryptomania_options_form', 'field_2_name' );
     register_setting( 'cryptomania_options_form', 'checkbox_1_name' );
+    register_setting( 'cryptomania_options_form', 'checkbox_1_value' );
     register_setting( 'cryptomania_options_form', 'checkbox_2_name' );
+    register_setting( 'cryptomania_options_form', 'checkbox_2_value' );
+    register_setting( 'cryptomania_options_form', 'interest_list_id' );
     register_setting( 'cryptomania_options_form', 'submit_button_text' );
     register_setting( 'cryptomania_options_form', 'field_1_placeholder_text' );
     register_setting( 'cryptomania_options_form', 'field_2_placeholder_text' );
@@ -92,12 +95,15 @@ function cryptomania_admin_menu() {
     add_settings_field( 'previous_link_text', 'Previous Link Text', 'cryptomania_prev_text', 'cryptomania_options', 'cryptomania-other-options' );
     // Form
     add_settings_field( 'form_action_link', 'Form Action Link', 'cryptomania_form_action_link', 'cryptomania_options_form', 'cryptomania-configuration-options' );
-    add_settings_field( 'form_u_value', 'Form U Value', 'cryptomania_form_u_value', 'cryptomania_options_form', 'cryptomania-configuration-options' );
-    add_settings_field( 'form_id_value', 'Form ID Value', 'cryptomania_form_id_value', 'cryptomania_options_form', 'cryptomania-configuration-options' );
+    add_settings_field( 'form_u_value', 'Form List ID Value', 'cryptomania_form_u_value', 'cryptomania_options_form', 'cryptomania-configuration-options' );
+    add_settings_field( 'form_id_value', 'Form Hidden Email Txt Value', 'cryptomania_form_id_value', 'cryptomania_options_form', 'cryptomania-configuration-options' );
     add_settings_field( 'field_1_name', 'Field 1 Name', 'cryptomania_field_1_name', 'cryptomania_options_form', 'cryptomania-configuration-options' );
     add_settings_field( 'field_2_name', 'Field 2 Name', 'cryptomania_field_2_name', 'cryptomania_options_form', 'cryptomania-configuration-options' );
     add_settings_field( 'checkbox_1_name', 'Checkbox 1 Name', 'cryptomania_checkbox_1_name', 'cryptomania_options_form', 'cryptomania-configuration-options' );
+    add_settings_field( 'checkbox_1_value', 'Checkbox 1 Value', 'cryptomania_checkbox_1_value', 'cryptomania_options_form', 'cryptomania-configuration-options' );
     add_settings_field( 'checkbox_2_name', 'Checkbox 2 Name', 'cryptomania_checkbox_2_name', 'cryptomania_options_form', 'cryptomania-configuration-options' );
+    add_settings_field( 'checkbox_2_value', 'Checkbox 2 Value', 'cryptomania_checkbox_2_value', 'cryptomania_options_form', 'cryptomania-configuration-options' );
+    add_settings_field( 'interest_list_id', 'Interest List ID', 'cryptomania_interest_list_id', 'cryptomania_options_form', 'cryptomania-configuration-options' );
     add_settings_field( 'submit_button_text', 'Submit Button Text', 'cryptomania_submit_button_text', 'cryptomania_options_form', 'cryptomania-form-text-options' );
     add_settings_field( 'field_1_placeholder_text', 'Field 1 Placeholder Text', 'cryptomania_field_1_placeholder_text', 'cryptomania_options_form', 'cryptomania-form-text-options' );
     add_settings_field( 'field_2_placeholder_text', 'Field 2 Placeholder Text', 'cryptomania_field_2_placeholder_text', 'cryptomania_options_form', 'cryptomania-form-text-options' );
@@ -257,9 +263,24 @@ function cryptomania_submit_button_text() {
   echo '<input id="submit_button_text" class="regular-text" type="text" name="submit_button_text" value="'.$submitButton.'" />';
 }
 
+function cryptomania_interest_list_id() {
+  $interestListId = html_entity_decode( esc_attr( get_option( 'interest_list_id' ) ) );
+  echo '<input id="interest_list_id" class="regular-text" type="text" name="interest_list_id" value="'.$interestListId.'" />';
+}
+
+function cryptomania_checkbox_2_value() {
+  $checkbox2value = html_entity_decode( esc_attr( get_option( 'checkbox_2_value' ) ) );
+  echo '<input id="checkbox_2_value" class="regular-text" type="text" name="checkbox_2_value" value="'.$checkbox2value.'" />';
+}
+
 function cryptomania_checkbox_2_name() {
   $checkbox2 = html_entity_decode( esc_attr( get_option( 'checkbox_2_name' ) ) );
   echo '<input id="checkbox_2_name" class="regular-text" type="text" name="checkbox_2_name" value="'.$checkbox2.'" />';
+}
+
+function cryptomania_checkbox_1_value() {
+  $checkbox1value = html_entity_decode( esc_attr( get_option( 'checkbox_1_value' ) ) );
+  echo '<input id="checkbox_1_value" class="regular-text" type="text" name="checkbox_1_value" value="'.$checkbox1value.'" />';
 }
 
 function cryptomania_checkbox_1_name() {
