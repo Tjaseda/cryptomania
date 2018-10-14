@@ -15,19 +15,22 @@ $footerFormText = get_option( 'footer_form_title' );
 $footerText = get_option( 'footer_copyright' );
 $footerLogoLink = get_option( 'footer_logo_link' );
 
-$fomrAction = get_option( 'form_action_link' );
-$formUValue = get_option( 'form_u_value' );
-$formIDValue = get_option( 'form_id_value' );
+$formAction = get_option( 'form_action_link' );
+$formListIDValue = get_option( 'form_u_value' );
+$formEmailTxtValue = get_option( 'form_id_value' );
 $field1Name = get_option( 'field_1_name' );
 $field2Name = get_option( 'field_2_name' );
 $checkbox1Name = get_option( 'checkbox_1_name' );
+$checkbox1Value = get_option( 'checkbox_1_value' );
 $checkbox2Name = get_option( 'checkbox_2_name' );
+$checkbox2Value = get_option( 'checkbox_2_value' );
 
 $submitButtonText = get_option( 'submit_button_text' );
 $field1Placeholder = get_option( 'field_1_placeholder_text' );
 $field2Placeholder = get_option( 'field_2_placeholder_text' );
 $checkboxUpdateText = get_option( 'checkbox_update_text' );
 $checkboxMarketingText = get_option( 'checkbox_marketing_text' );
+$interestListID = get_option( 'interest_list_id' );
 
 $companyTwitter = get_option( 'company_twitter' );
 $companyFacebook = get_option( 'company_facebook' );
