@@ -59,27 +59,32 @@ $companyYoutube = get_option( 'company_youtube' );
 					<p class="o-h o-h__2 o-txt--white o-txt--center"><?php echo $footerFormText; ?></p>
 				</div>
 
-				<!-- Signup form -->
-				<div class="c-form">
-				  <form class="c-form__wrap" action="<?php echo $fomrAction; ?>" method="POST">
-				    <input type="hidden" name="u" value="<?php echo $formUValue; ?>">
-				    <input type="hidden" name="id" value="<?php echo $formIDValue; ?>">
+        <!-- Signup Form -->
+        <div class="c-form">
+          <form method="post" class="c-form__wrap" id="theform" name="theform" action="<?php echo $formAction; ?>" method="post">
+            <input type="hidden" name="js_id" id="js_id" value="3qhme">
+            <input type="hidden" name="listid" id="listid" value="<?php echo $formListIDValue; ?>">
+            <input type="hidden" name="from_url" id="from_url" value="yes">
+            <input type="hidden" name="hdn_email_txt" id="hdn_email_txt" value="<?php echo $formEmailTxtValue; ?>">
+            <input type="hidden" name="req_hid" id="req_hid" value="" style="font-size: 13px;">
 
-						<div class="l-row l-row-sm--col-o l-row-md--row-o">
-					    <input type="text" name="<?php echo $field1Name; ?>" placeholder="<?php echo $field1Placeholder; ?>" class="c-form__input c-form__input--first" />
-					    <input type="email" name="<?php echo $field2Name; ?>" placeholder="<?php echo $field2Placeholder; ?>" class="c-form__input c-form__input--second" />
-						</div>
+            <div class="l-row l-row-sm--col-o l-row-md--row-o">
+              <input type="text" name="<?php echo $field1Name; ?>" id="<?php echo $field1Name; ?>" placeholder="<?php echo $field1Placeholder; ?>" class="c-form__input c-form__input--first" />
+              <input type="<?php echo $field2Name; ?>" name="<?php echo $field2Name; ?>" id="<?php echo $field2Name; ?>" placeholder="<?php echo $field2Placeholder; ?>" class="c-form__input c-form__input--second" />
+            </div>
 
-				    <input type="submit" name="submit" value="<?php echo $submitButtonText; ?>" class="c-form__button" />
+            <input type="submit" data-editfield="subscribe" contenteditable="false" name="submit" id="submit" value="<?php echo $submitButtonText; ?>" class="c-form__button" onClick="resetCheckbox()" />
 
-				    <div class="c-form__check-wrap">
-				      <input type="checkbox" data-dojo-type="dijit/form/CheckBox" id="update2" name="<?php echo $checkbox1Name; ?>" value="Y">
-				      <label class="c-form__checkbox" for="update2"><span><?php echo $checkboxUpdateText; ?></span> </label>
-				      <input type="checkbox" data-dojo-type="dijit/form/CheckBox" id="market2" name="<?php echo $checkbox2Name; ?>" value="Y">
-				      <label class="c-form__checkbox" for="market2"><span><?php echo $checkboxMarketingText; ?></span> </label>
-				    </div>
-				  </form>
-				</div><!-- /form -->
+            <div class="c-form__check-wrap">
+              <input type="checkbox" id="update2" name="<?php echo $checkbox1Name; ?>" value="<?php echo $checkbox1Value; ?>">
+              <label class="c-form__checkbox" for="update2"><span><?php echo $checkboxUpdateText; ?></span> </label>
+              <input type="checkbox" id="market2" name="<?php echo $checkbox2Name; ?>" value="<?php echo $checkbox2Value; ?>">
+              <label class="c-form__checkbox" for="market2"><span><?php echo $checkboxMarketingText; ?></span> </label>
+            </div>
+
+            <input type="hidden" name="interestLists" value="<?php echo $interestListID; ?>">
+          </form>
+        </div><!-- /form -->
 
 			</div>
 
