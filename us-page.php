@@ -15,6 +15,11 @@ $about_us_subtitle = get_field( 'about_us_subtitle' );
 $about_us_content = get_field( 'about_us_content' );
 $about_us_contact_title = get_field( 'about_us_contact_title' );
 
+$about_us_download_link_text_1 = get_field( 'about_us_download_link_text_1' );
+$about_us_download_link_1 = get_field( 'about_us_download_link_1' );
+$about_us_download_link_text_2 = get_field( 'about_us_download_link_text_2' );
+$about_us_download_link_2 = get_field( 'about_us_download_link_2' );
+
 $companyName = get_option( 'company_name' );
 $companyAddress = get_option( 'company_address' );
 $companyPhone = get_option( 'company_phone' );
@@ -76,8 +81,8 @@ $companyPREmail = get_option( 'company_pr_email' );
                 <p class="o-s o-s__1 o-txt--gray"><?php echo $companyAddress; ?></p>
               </div><br /><br />
             <?php endif; ?>
-
             </div>
+
             <div class="c-contact">
               <?php if( $companyPRName ) : ?>
                 <p class="o-s o-s__1 o-txt--gray"><b><?php echo $companyPRName; ?></b></p>
@@ -91,7 +96,21 @@ $companyPREmail = get_option( 'company_pr_email' );
                 <?php endif; ?>
               </div>
             </div>
+
+            <?php if($about_us_download_link_1) : ?>
+              <div class="o-btn--wrapper">
+                <a href="<?php echo $about_us_download_link_1; ?>" title="<?php echo $about_us_download_link_text_1; ?>" target="_blank"><button class="c-form__button"><?php echo $about_us_download_link_text_1; ?></button></a>
+              </div>
+            <?php endif; ?>
+
+            <?php if($about_us_download_link_2) : ?>
+              <div class="o-btn--wrapper">
+                <a href="<?php echo $about_us_download_link_2; ?>" title="<?php echo $about_us_download_link_text_2; ?>" target="_blank"><button class="c-form__button"><?php echo $about_us_download_link_text_2; ?></button></a>
+              </div>
+            <?php endif; ?>
+
           </div>
+
       </div>
       <!-- second column -->
       <div class="l-cl l-cl-sm--10 l-cl-ds--4 l-mg-y--2">
