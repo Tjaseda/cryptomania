@@ -16,6 +16,7 @@ $characters_section_2_title = get_field( 'characters_section_2_title' );
 $characters_section_2_subtitle = get_field( 'characters_section_2_subtitle' );
 $characters_section_2_content = get_field( 'characters_section_2_content' );
 $characters_section_2_image = get_field( 'characters_section_2_image' );
+$characters_section_2_video_embed_link = get_field( 'characters_section_2_video_embed_link' );
 
 $characters_section_3_title = get_field( 'characters_section_3_title' );
 $characters_section_3_subtitle = get_field( 'characters_section_3_subtitle' );
@@ -119,6 +120,7 @@ $characters_section_11_image = get_field( 'characters_section_11_image' );
 
 <div class="o-pg-sec o-pg-sec--purple o-pg-sec--pd-md">
   <div class="l-container">
+
     <!-- flexbox row -->
     <div class="l-row l-row-sm--col-o l-row-ds--row-o">
       <!-- first column -->
@@ -151,8 +153,15 @@ $characters_section_11_image = get_field( 'characters_section_11_image' );
               <?php endif; ?>
             </div>
         </div>
-
     </div><!-- /row -->
+
+    <?php if($characters_section_2_video_embed_link) : ?>
+      <div class="c-video__container-wrap">
+        <div class="c-video__wrap">
+          <iframe class="c-video__iframe" src="<?php echo $characters_section_2_video_embed_link ?>?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div> <!-- /video container -->
+    <?php endif; ?>
   </div><!-- /container -->
 </div><!-- /page section -->
 

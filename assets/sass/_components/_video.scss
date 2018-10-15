@@ -12,6 +12,20 @@
     }
   }
 
+  &__container-wrap {
+    width: 100%;
+    margin: $offset20 auto $offset50 auto;
+
+    @include breakpoint(medium) {
+      width: 100%;
+    }
+
+    @include breakpoint(desktop) {
+      width: 90%;
+      margin: $offset80 auto $offset50 auto;
+    }
+  }
+
   &__wrap {
     width: 100%;
     position: relative;

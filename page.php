@@ -29,8 +29,6 @@ get_header();
 		<div class="l-container">
 			<div class="l-wrap">
 					<?php echo get_post_field('post_content', $post->ID); ?>
-
-					<?php es_af_subbox( $id = '1' ); ?>
 			</div>
 		</div>
 	</div>
